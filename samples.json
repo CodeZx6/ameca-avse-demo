@@ -1,2266 +1,824 @@
 {
- "recording": "rec_20260922_223350_full2",
- "comparison": [
+ "tabs": [
   {
-   "kind": "comparison",
-   "id": "tcd__40F_sx294_TMETRO_-5__blackout",
-   "n": 1,
-   "text": "Should giraffes be kept in small zoos?",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "40F",
-   "sentence": "sx294",
-   "noise": "TMETRO",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 9.98,
-    "AV": 4.29,
-    "CADS": 4.65,
-    "RGI": 9.55
-   },
-   "rgi_minus_av": 5.26,
-   "wer_w2v": {
-    "noisy": 1.0,
-    "AO": 0.86,
-    "AV": 1.0,
-    "CADS": 1.0,
-    "RGI": 0.86,
-    "clean": 0.29
-   },
-   "tags": {
-    "RGI": "r2_s01_tcd__40F_sx294_TMETRO_-5__blackout",
-    "AV": "r1_s01_tcd__40F_sx294_TMETRO_-5__blackout"
-   },
-   "out_sec": 4.602,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__40F_sx294_TMETRO_-5__blackout/input_av.mp4",
-     "poster": "assets/tcd__40F_sx294_TMETRO_-5__blackout/input_av.jpg"
+   "id": "rgi",
+   "name": "RGI across visual shifts",
+   "items": [
+    {
+     "text": "Draw each graph on a new axis.",
+     "visual_shift": "Clean",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 17.98,
+      "RGI": 18.31,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s01_tcd__clean__09F_sx197_OOFFICE_5.mp4"
+     },
+     "clean": "assets/tcd__clean__09F_sx197_OOFFICE_5/clean.mp3"
     },
-    "AV": "assets/tcd__40F_sx294_TMETRO_-5__blackout/AV.mp3",
-    "RGI": "assets/tcd__40F_sx294_TMETRO_-5__blackout/RGI.mp3",
-    "clean": "assets/tcd__40F_sx294_TMETRO_-5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s01_tcd__40F_sx294_TMETRO_-5__blackout.mp4",
-     "poster": "assets/video/r2_s01_tcd__40F_sx294_TMETRO_-5__blackout.jpg"
+    {
+     "text": "Have you got our keys handy?",
+     "visual_shift": "Clean",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 16.59,
+      "RGI": 17.2,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s02_tcd__clean__47M_si1629_TBUS_5.mp4"
+     },
+     "clean": "assets/tcd__clean__47M_si1629_TBUS_5/clean.mp3"
     },
-    "robot_AV": {
-     "src": "assets/video/r1_s01_tcd__40F_sx294_TMETRO_-5__blackout.mp4",
-     "poster": "assets/video/r1_s01_tcd__40F_sx294_TMETRO_-5__blackout.jpg"
+    {
+     "text": "bin green by e four again",
+     "visual_shift": "Clean",
+     "corpus": "GRID",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 13.33,
+      "RGI": 13.63,
+      "noisy": 4.92
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s15_grid__clean__s34_bgbe4a_TBUS_+5.mp4"
+     },
+     "clean": "assets/grid__clean__s34_bgbe4a_TBUS_+5/clean.mp3"
+    },
+    {
+     "text": "Reading in poor light gives you eyestrain.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 12.37,
+      "RGI": 16.2,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s03_tcd__occlusion__56M_sx248_OOFFICE_5.mp4"
+     },
+     "clean": "assets/tcd__occlusion__56M_sx248_OOFFICE_5/clean.mp3"
+    },
+    {
+     "text": "Have you got our keys handy?",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 14.69,
+      "RGI": 16.96,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s04_tcd__occlusion__47M_si1629_OOFFICE_5.mp4"
+     },
+     "clean": "assets/tcd__occlusion__47M_si1629_OOFFICE_5/clean.mp3"
+    },
+    {
+     "text": "bin green by e four again",
+     "visual_shift": "Occlusion",
+     "corpus": "GRID",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 13.22,
+      "RGI": 13.59,
+      "noisy": 4.92
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s16_grid__occlusion__s34_bgbe4a_TBUS_+5.mp4"
+     },
+     "clean": "assets/grid__occlusion__s34_bgbe4a_TBUS_+5/clean.mp3"
+    },
+    {
+     "text": "Norwegian sweaters are made of lamb's wool.",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 15.47,
+      "RGI": 15.98,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s05_tcd__blackout__47M_sx198_TBUS_5.mp4"
+     },
+     "clean": "assets/tcd__blackout__47M_sx198_TBUS_5/clean.mp3"
+    },
+    {
+     "text": "Draw each graph on a new axis.",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 15.27,
+      "RGI": 17.73,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s06_tcd__blackout__09F_sx197_OOFFICE_5.mp4"
+     },
+     "clean": "assets/tcd__blackout__09F_sx197_OOFFICE_5/clean.mp3"
+    },
+    {
+     "text": "lay blue with q five again",
+     "visual_shift": "Blackout",
+     "corpus": "GRID",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 12.73,
+      "RGI": 12.77,
+      "noisy": 4.99
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s17_grid__blackout__s11_lbwq5a_OOFFICE_+5.mp4"
+     },
+     "clean": "assets/grid__blackout__s11_lbwq5a_OOFFICE_+5/clean.mp3"
+    },
+    {
+     "text": "Ralph controlled the stopwatch from the bleachers.",
+     "visual_shift": "Wrong speaker",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 17.67,
+      "RGI": 18.1,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s07_tcd__wrong_speaker__47M_sx200_TBUS_5.mp4"
+     },
+     "clean": "assets/tcd__wrong_speaker__47M_sx200_TBUS_5/clean.mp3"
+    },
+    {
+     "text": "Do you hear the sleigh bells ringing?",
+     "visual_shift": "Wrong speaker",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 16.51,
+      "RGI": 17.2,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s08_tcd__wrong_speaker__40F_sx207_TBUS_5.mp4"
+     },
+     "clean": "assets/tcd__wrong_speaker__40F_sx207_TBUS_5/clean.mp3"
+    },
+    {
+     "text": "place white in s seven now",
+     "visual_shift": "Wrong speaker",
+     "corpus": "GRID",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 8.63,
+      "RGI": 13.65,
+      "noisy": 5.05
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s18_grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5.mp4"
+     },
+     "clean": "assets/grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5/clean.mp3"
+    },
+    {
+     "text": "The small boy put the worm on the hook.",
+     "visual_shift": "Freeze",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 17.54,
+      "RGI": 17.68,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s09_tcd__freeze__26M_sx216_OOFFICE_5.mp4"
+     },
+     "clean": "assets/tcd__freeze__26M_sx216_OOFFICE_5/clean.mp3"
+    },
+    {
+     "text": "Have you got our keys handy?",
+     "visual_shift": "Freeze",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 16.67,
+      "RGI": 17.25,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s10_tcd__freeze__47M_si1629_TBUS_5.mp4"
+     },
+     "clean": "assets/tcd__freeze__47M_si1629_TBUS_5/clean.mp3"
+    },
+    {
+     "text": "lay white in d two again",
+     "visual_shift": "Freeze",
+     "corpus": "GRID",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 11.12,
+      "RGI": 11.23,
+      "noisy": 5.15
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s19_grid__freeze__s16_lwid2a_TBUS_+5.mp4"
+     },
+     "clean": "assets/grid__freeze__s16_lwid2a_TBUS_+5/clean.mp3"
+    },
+    {
+     "text": "Have you got our keys handy?",
+     "visual_shift": "A/V offset",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 16.58,
+      "RGI": 17.17,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s11_tcd__avoffset__47M_si1629_TBUS_5.mp4"
+     },
+     "clean": "assets/tcd__avoffset__47M_si1629_TBUS_5/clean.mp3"
+    },
+    {
+     "text": "The small boy put the worm on the hook.",
+     "visual_shift": "A/V offset",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 17.57,
+      "RGI": 17.7,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s12_tcd__avoffset__26M_sx216_OOFFICE_5.mp4"
+     },
+     "clean": "assets/tcd__avoffset__26M_sx216_OOFFICE_5/clean.mp3"
+    },
+    {
+     "text": "bin green by e four again",
+     "visual_shift": "A/V offset",
+     "corpus": "GRID",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 13.35,
+      "RGI": 13.69,
+      "noisy": 4.92
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s20_grid__avoffset__s34_bgbe4a_TBUS_+5.mp4"
+     },
+     "clean": "assets/grid__avoffset__s34_bgbe4a_TBUS_+5/clean.mp3"
+    },
+    {
+     "text": "Norwegian sweaters are made of lamb's wool.",
+     "visual_shift": "Low resolution",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 16.51,
+      "RGI": 16.61,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s13_tcd__lowres__47M_sx198_TBUS_5.mp4"
+     },
+     "clean": "assets/tcd__lowres__47M_sx198_TBUS_5/clean.mp3"
+    },
+    {
+     "text": "The small boy put the worm on the hook.",
+     "visual_shift": "Low resolution",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 17.44,
+      "RGI": 17.59,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s14_tcd__lowres__26M_sx216_OOFFICE_5.mp4"
+     },
+     "clean": "assets/tcd__lowres__26M_sx216_OOFFICE_5/clean.mp3"
+    },
+    {
+     "text": "lay blue with q five again",
+     "visual_shift": "Low resolution",
+     "corpus": "GRID",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 13.13,
+      "RGI": 12.96,
+      "noisy": 4.99
+     },
+     "clips": {
+      "backbone_rgi": "assets/clips/r3_s21_grid__lowres__s11_lbwq5a_OOFFICE_+5.mp4"
+     },
+     "clean": "assets/grid__lowres__s11_lbwq5a_OOFFICE_+5/clean.mp3"
     }
-   }
+   ]
   },
   {
-   "kind": "comparison",
-   "id": "tcd__40F_sx294_TMETRO_5__blackout",
-   "n": 2,
-   "text": "Should giraffes be kept in small zoos?",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "40F",
-   "sentence": "sx294",
-   "noise": "TMETRO",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 13.48,
-    "AV": 8.19,
-    "CADS": 8.07,
-    "RGI": 13.13
-   },
-   "rgi_minus_av": 4.94,
-   "wer_w2v": {
-    "noisy": 0.71,
-    "AO": 0.29,
-    "AV": 0.86,
-    "CADS": 0.86,
-    "RGI": 0.29,
-    "clean": 0.29
-   },
-   "tags": {
-    "RGI": "r2_s02_tcd__40F_sx294_TMETRO_5__blackout",
-    "AV": "r1_s02_tcd__40F_sx294_TMETRO_5__blackout"
-   },
-   "out_sec": 4.602,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__40F_sx294_TMETRO_5__blackout/input_av.mp4",
-     "poster": "assets/tcd__40F_sx294_TMETRO_5__blackout/input_av.jpg"
+   "id": "cmp-occlusion",
+   "name": "Comparison · Occlusion",
+   "items": [
+    {
+     "text": "I just saw Jim near the new archeological museum.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 0.08,
+      "RGI": 4.86,
+      "noisy": -5.19
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s06_tcd__24M_sx378_TMETRO_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s06_tcd__24M_sx378_TMETRO_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__24M_sx378_TMETRO_-5__occlusion/clean.mp3"
     },
-    "AV": "assets/tcd__40F_sx294_TMETRO_5__blackout/AV.mp3",
-    "RGI": "assets/tcd__40F_sx294_TMETRO_5__blackout/RGI.mp3",
-    "clean": "assets/tcd__40F_sx294_TMETRO_5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s02_tcd__40F_sx294_TMETRO_5__blackout.mp4",
-     "poster": "assets/video/r2_s02_tcd__40F_sx294_TMETRO_5__blackout.jpg"
+    {
+     "text": "Do they allow atheists in church?",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 9.42,
+      "RGI": 13.91,
+      "noisy": 4.98
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s09_tcd__27M_sx254_TMETRO_5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s09_tcd__27M_sx254_TMETRO_5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__27M_sx254_TMETRO_5__occlusion/clean.mp3"
     },
-    "robot_AV": {
-     "src": "assets/video/r1_s02_tcd__40F_sx294_TMETRO_5__blackout.mp4",
-     "poster": "assets/video/r1_s02_tcd__40F_sx294_TMETRO_5__blackout.jpg"
+    {
+     "text": "He stole a dime from a beggar.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 12.81,
+      "RGI": 16.61,
+      "noisy": -5.0
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s10_tcd__09F_sx104_OOFFICE_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s10_tcd__09F_sx104_OOFFICE_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__09F_sx104_OOFFICE_-5__occlusion/clean.mp3"
+    },
+    {
+     "text": "Are your grades higher or lower than Nancy's?",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Public square",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 7.22,
+      "RGI": 10.79,
+      "noisy": 4.95
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s11_tcd__24M_sx10_SPSQUARE_5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s11_tcd__24M_sx10_SPSQUARE_5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__24M_sx10_SPSQUARE_5__occlusion/clean.mp3"
+    },
+    {
+     "text": "From it, spokes of order and degree led to the outward rim of the common man.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 6.79,
+      "RGI": 9.9,
+      "noisy": 5.01
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s14_tcd__27M_si1227_TMETRO_5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s14_tcd__27M_si1227_TMETRO_5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__27M_si1227_TMETRO_5__occlusion/clean.mp3"
+    },
+    {
+     "text": "The overweight charmer could slip poison into anyone's tea.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 10.98,
+      "RGI": 13.75,
+      "noisy": -5.01
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s16_tcd__56M_sx433_OOFFICE_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s16_tcd__56M_sx433_OOFFICE_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__56M_sx433_OOFFICE_-5__occlusion/clean.mp3"
+    },
+    {
+     "text": "Should giraffes be kept in small zoos?",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 7.37,
+      "RGI": 9.87,
+      "noisy": -4.96
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s18_tcd__40F_sx294_TMETRO_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s18_tcd__40F_sx294_TMETRO_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__40F_sx294_TMETRO_-5__occlusion/clean.mp3"
+    },
+    {
+     "text": "Should giraffes be kept in small zoos?",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 11.05,
+      "RGI": 13.47,
+      "noisy": 4.99
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s19_tcd__40F_sx294_TMETRO_5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s19_tcd__40F_sx294_TMETRO_5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__40F_sx294_TMETRO_5__occlusion/clean.mp3"
+    },
+    {
+     "text": "Try to recall the events in chronological order.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 6.35,
+      "RGI": 8.71,
+      "noisy": -5.03
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s20_tcd__33F_sx218_TMETRO_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s20_tcd__33F_sx218_TMETRO_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__33F_sx218_TMETRO_-5__occlusion/clean.mp3"
+    },
+    {
+     "text": "Why else would Danny allow others to go?",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Street traffic",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 7.11,
+      "RGI": 9.29,
+      "noisy": 4.98
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s21_tcd__24M_sx183_STRAFFIC_5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s21_tcd__24M_sx183_STRAFFIC_5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__24M_sx183_STRAFFIC_5__occlusion/clean.mp3"
+    },
+    {
+     "text": "I just saw Jim near the new archeological museum.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Public square",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 2.6,
+      "RGI": 4.55,
+      "noisy": -5.04
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__24M_sx378_SPSQUARE_-5__occlusion/clean.mp3"
+    },
+    {
+     "text": "Why else would Danny allow others to go?",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Public square",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 4.83,
+      "RGI": 6.7,
+      "noisy": -5.06
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__24M_sx183_SPSQUARE_-5__occlusion/clean.mp3"
+    },
+    {
+     "text": "The small boy put the worm on the hook.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Street traffic",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 7.92,
+      "RGI": 6.48,
+      "noisy": -4.95
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__26M_sx216_STRAFFIC_-5__occlusion/clean.mp3"
+    },
+    {
+     "text": "Would you allow acts of violence?",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Public square",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 4.35,
+      "RGI": 1.4,
+      "noisy": -5.0
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__09F_sx195_SPSQUARE_-5__occlusion/clean.mp3"
+    },
+    {
+     "text": "I know I didn't meet her early enough.",
+     "visual_shift": "Occlusion",
+     "corpus": "TCD-TIMIT",
+     "noise": "Public square",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 5.85,
+      "RGI": 2.34,
+      "noisy": -4.98
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion.mp4",
+      "backbone_rgi": "assets/clips/r2_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion.mp4"
+     },
+     "clean": "assets/tcd__56M_sx344_SPSQUARE_-5__occlusion/clean.mp3"
     }
-   }
+   ]
   },
   {
-   "kind": "comparison",
-   "id": "tcd__49F_sx49_SPSQUARE_5__wrong_speaker",
-   "n": 3,
-   "text": "At twilight on the twelfth day we'll have Chablis.",
-   "dataset": "TCD-TIMIT",
-   "cond": "wrong_speaker",
-   "speaker": "49F",
-   "sentence": "sx49",
-   "noise": "SPSQUARE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 13.19,
-    "AV": 8.38,
-    "CADS": 8.51,
-    "RGI": 13.29
-   },
-   "rgi_minus_av": 4.91,
-   "wer_w2v": {
-    "noisy": 0.44,
-    "AO": 0.44,
-    "AV": 0.44,
-    "CADS": 0.44,
-    "RGI": 0.33,
-    "clean": 0.11
-   },
-   "tags": {
-    "RGI": "r2_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker",
-    "AV": "r1_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker"
-   },
-   "out_sec": 4.666,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__49F_sx49_SPSQUARE_5__wrong_speaker/input_av.mp4",
-     "poster": "assets/tcd__49F_sx49_SPSQUARE_5__wrong_speaker/input_av.jpg"
+   "id": "cmp-blackout",
+   "name": "Comparison · Blackout",
+   "items": [
+    {
+     "text": "Should giraffes be kept in small zoos?",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 4.29,
+      "RGI": 9.55,
+      "noisy": -4.96
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s01_tcd__40F_sx294_TMETRO_-5__blackout.mp4",
+      "backbone_rgi": "assets/clips/r2_s01_tcd__40F_sx294_TMETRO_-5__blackout.mp4"
+     },
+     "clean": "assets/tcd__40F_sx294_TMETRO_-5__blackout/clean.mp3"
     },
-    "AV": "assets/tcd__49F_sx49_SPSQUARE_5__wrong_speaker/AV.mp3",
-    "RGI": "assets/tcd__49F_sx49_SPSQUARE_5__wrong_speaker/RGI.mp3",
-    "clean": "assets/tcd__49F_sx49_SPSQUARE_5__wrong_speaker/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker.mp4",
-     "poster": "assets/video/r2_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker.jpg"
+    {
+     "text": "Should giraffes be kept in small zoos?",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 8.19,
+      "RGI": 13.13,
+      "noisy": 4.99
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s02_tcd__40F_sx294_TMETRO_5__blackout.mp4",
+      "backbone_rgi": "assets/clips/r2_s02_tcd__40F_sx294_TMETRO_5__blackout.mp4"
+     },
+     "clean": "assets/tcd__40F_sx294_TMETRO_5__blackout/clean.mp3"
     },
-    "robot_AV": {
-     "src": "assets/video/r1_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker.mp4",
-     "poster": "assets/video/r1_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker.jpg"
+    {
+     "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Street traffic",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 7.3,
+      "RGI": 12.2,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s04_tcd__09F_si2056_STRAFFIC_5__blackout.mp4",
+      "backbone_rgi": "assets/clips/r2_s04_tcd__09F_si2056_STRAFFIC_5__blackout.mp4"
+     },
+     "clean": "assets/tcd__09F_si2056_STRAFFIC_5__blackout/clean.mp3"
+    },
+    {
+     "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 7.53,
+      "RGI": 12.15,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s08_tcd__09F_si2056_TMETRO_5__blackout.mp4",
+      "backbone_rgi": "assets/clips/r2_s08_tcd__09F_si2056_TMETRO_5__blackout.mp4"
+     },
+     "clean": "assets/tcd__09F_si2056_TMETRO_5__blackout/clean.mp3"
+    },
+    {
+     "text": "Our campus, unfortunately, owns no films.",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Public square",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 10.47,
+      "RGI": 13.83,
+      "noisy": 4.97
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s12_tcd__47M_si1366_SPSQUARE_5__blackout.mp4",
+      "backbone_rgi": "assets/clips/r2_s12_tcd__47M_si1366_SPSQUARE_5__blackout.mp4"
+     },
+     "clean": "assets/tcd__47M_si1366_SPSQUARE_5__blackout/clean.mp3"
+    },
+    {
+     "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Public square",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 7.24,
+      "RGI": 10.4,
+      "noisy": -4.99
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s13_tcd__09F_si2056_SPSQUARE_-5__blackout.mp4",
+      "backbone_rgi": "assets/clips/r2_s13_tcd__09F_si2056_SPSQUARE_-5__blackout.mp4"
+     },
+     "clean": "assets/tcd__09F_si2056_SPSQUARE_-5__blackout/clean.mp3"
+    },
+    {
+     "text": "The easygoing zoologist relaxed throughout the voyage.",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 9.13,
+      "RGI": 12.21,
+      "noisy": -4.99
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s15_tcd__56M_sx165_OOFFICE_-5__blackout.mp4",
+      "backbone_rgi": "assets/clips/r2_s15_tcd__56M_sx165_OOFFICE_-5__blackout.mp4"
+     },
+     "clean": "assets/tcd__56M_sx165_OOFFICE_-5__blackout/clean.mp3"
+    },
+    {
+     "text": "At twilight on the twelfth day we'll have Chablis.",
+     "visual_shift": "Blackout",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 6.9,
+      "RGI": 9.56,
+      "noisy": -4.97
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s17_tcd__49F_sx49_TMETRO_-5__blackout.mp4",
+      "backbone_rgi": "assets/clips/r2_s17_tcd__49F_sx49_TMETRO_-5__blackout.mp4"
+     },
+     "clean": "assets/tcd__49F_sx49_TMETRO_-5__blackout/clean.mp3"
     }
-   }
+   ]
   },
   {
-   "kind": "comparison",
-   "id": "tcd__09F_si2056_STRAFFIC_5__blackout",
-   "n": 4,
-   "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "09F",
-   "sentence": "si2056",
-   "noise": "STRAFFIC",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 12.44,
-    "AV": 7.3,
-    "CADS": 6.91,
-    "RGI": 12.2
-   },
-   "rgi_minus_av": 4.9,
-   "wer_w2v": {
-    "noisy": 0.54,
-    "AO": 0.54,
-    "AV": 0.69,
-    "CADS": 0.92,
-    "RGI": 0.54,
-    "clean": 0.31
-   },
-   "tags": {
-    "RGI": "r2_s04_tcd__09F_si2056_STRAFFIC_5__blackout",
-    "AV": "r1_s04_tcd__09F_si2056_STRAFFIC_5__blackout"
-   },
-   "out_sec": 6.501,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__09F_si2056_STRAFFIC_5__blackout/input_av.mp4",
-     "poster": "assets/tcd__09F_si2056_STRAFFIC_5__blackout/input_av.jpg"
+   "id": "cmp-wrong-speaker",
+   "name": "Comparison · Wrong speaker",
+   "items": [
+    {
+     "text": "At twilight on the twelfth day we'll have Chablis.",
+     "visual_shift": "Wrong speaker",
+     "corpus": "TCD-TIMIT",
+     "noise": "Public square",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 8.38,
+      "RGI": 13.29,
+      "noisy": 4.99
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker.mp4",
+      "backbone_rgi": "assets/clips/r2_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker.mp4"
+     },
+     "clean": "assets/tcd__49F_sx49_SPSQUARE_5__wrong_speaker/clean.mp3"
     },
-    "AV": "assets/tcd__09F_si2056_STRAFFIC_5__blackout/AV.mp3",
-    "RGI": "assets/tcd__09F_si2056_STRAFFIC_5__blackout/RGI.mp3",
-    "clean": "assets/tcd__09F_si2056_STRAFFIC_5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s04_tcd__09F_si2056_STRAFFIC_5__blackout.mp4",
-     "poster": "assets/video/r2_s04_tcd__09F_si2056_STRAFFIC_5__blackout.jpg"
+    {
+     "text": "At twilight on the twelfth day we'll have Chablis.",
+     "visual_shift": "Wrong speaker",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 4.43,
+      "RGI": 9.24,
+      "noisy": -4.97
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker.mp4",
+      "backbone_rgi": "assets/clips/r2_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker.mp4"
+     },
+     "clean": "assets/tcd__49F_sx49_TMETRO_-5__wrong_speaker/clean.mp3"
     },
-    "robot_AV": {
-     "src": "assets/video/r1_s04_tcd__09F_si2056_STRAFFIC_5__blackout.mp4",
-     "poster": "assets/video/r1_s04_tcd__09F_si2056_STRAFFIC_5__blackout.jpg"
+    {
+     "text": "The emblem depicts the Acropolis all aglow.",
+     "visual_shift": "Wrong speaker",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 7.89,
+      "RGI": 12.66,
+      "noisy": 5.01
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s07_tcd__47M_sx115_TBUS_5__wrong_speaker.mp4",
+      "backbone_rgi": "assets/clips/r2_s07_tcd__47M_sx115_TBUS_5__wrong_speaker.mp4"
+     },
+     "clean": "assets/tcd__47M_sx115_TBUS_5__wrong_speaker/clean.mp3"
+    },
+    {
+     "text": "Try to recall the events in chronological order.",
+     "visual_shift": "Wrong speaker",
+     "corpus": "TCD-TIMIT",
+     "noise": "Metro",
+     "snr_db": -5,
+     "si_sdr_db": {
+      "AV": 5.14,
+      "RGI": 6.98,
+      "noisy": -5.03
+     },
+     "clips": {
+      "backbone": "assets/clips/r1_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker.mp4",
+      "backbone_rgi": "assets/clips/r2_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker.mp4"
+     },
+     "clean": "assets/tcd__33F_sx218_TMETRO_-5__wrong_speaker/clean.mp3"
     }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__49F_sx49_TMETRO_-5__wrong_speaker",
-   "n": 5,
-   "text": "At twilight on the twelfth day we'll have Chablis.",
-   "dataset": "TCD-TIMIT",
-   "cond": "wrong_speaker",
-   "speaker": "49F",
-   "sentence": "sx49",
-   "noise": "TMETRO",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 9.63,
-    "AV": 4.43,
-    "CADS": 5.49,
-    "RGI": 9.24
-   },
-   "rgi_minus_av": 4.81,
-   "wer_w2v": {
-    "noisy": 1.0,
-    "AO": 0.67,
-    "AV": 0.89,
-    "CADS": 0.78,
-    "RGI": 0.44,
-    "clean": 0.11
-   },
-   "tags": {
-    "RGI": "r2_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker",
-    "AV": "r1_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker"
-   },
-   "out_sec": 4.666,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__49F_sx49_TMETRO_-5__wrong_speaker/input_av.mp4",
-     "poster": "assets/tcd__49F_sx49_TMETRO_-5__wrong_speaker/input_av.jpg"
-    },
-    "AV": "assets/tcd__49F_sx49_TMETRO_-5__wrong_speaker/AV.mp3",
-    "RGI": "assets/tcd__49F_sx49_TMETRO_-5__wrong_speaker/RGI.mp3",
-    "clean": "assets/tcd__49F_sx49_TMETRO_-5__wrong_speaker/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker.mp4",
-     "poster": "assets/video/r2_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker.mp4",
-     "poster": "assets/video/r1_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__24M_sx378_TMETRO_-5__occlusion",
-   "n": 6,
-   "text": "I just saw Jim near the new archeological museum.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "24M",
-   "sentence": "sx378",
-   "noise": "TMETRO",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 4.86,
-    "AV": 0.08,
-    "CADS": -0.0,
-    "RGI": 4.86
-   },
-   "rgi_minus_av": 4.78,
-   "wer_w2v": {
-    "noisy": 0.78,
-    "AO": 0.44,
-    "AV": 0.44,
-    "CADS": 0.44,
-    "RGI": 0.33,
-    "clean": 0.11
-   },
-   "tags": {
-    "RGI": "r2_s06_tcd__24M_sx378_TMETRO_-5__occlusion",
-    "AV": "r1_s06_tcd__24M_sx378_TMETRO_-5__occlusion"
-   },
-   "out_sec": 5.285,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__24M_sx378_TMETRO_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__24M_sx378_TMETRO_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__24M_sx378_TMETRO_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__24M_sx378_TMETRO_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__24M_sx378_TMETRO_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s06_tcd__24M_sx378_TMETRO_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s06_tcd__24M_sx378_TMETRO_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s06_tcd__24M_sx378_TMETRO_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s06_tcd__24M_sx378_TMETRO_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__47M_sx115_TBUS_5__wrong_speaker",
-   "n": 7,
-   "text": "The emblem depicts the Acropolis all aglow.",
-   "dataset": "TCD-TIMIT",
-   "cond": "wrong_speaker",
-   "speaker": "47M",
-   "sentence": "sx115",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 12.87,
-    "AV": 7.89,
-    "CADS": 8.04,
-    "RGI": 12.66
-   },
-   "rgi_minus_av": 4.77,
-   "wer_w2v": {
-    "noisy": 0.43,
-    "AO": 0.57,
-    "AV": 0.71,
-    "CADS": 0.57,
-    "RGI": 0.14,
-    "clean": 0.14
-   },
-   "tags": {
-    "RGI": "r2_s07_tcd__47M_sx115_TBUS_5__wrong_speaker",
-    "AV": "r1_s07_tcd__47M_sx115_TBUS_5__wrong_speaker"
-   },
-   "out_sec": 4.389,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__47M_sx115_TBUS_5__wrong_speaker/input_av.mp4",
-     "poster": "assets/tcd__47M_sx115_TBUS_5__wrong_speaker/input_av.jpg"
-    },
-    "AV": "assets/tcd__47M_sx115_TBUS_5__wrong_speaker/AV.mp3",
-    "RGI": "assets/tcd__47M_sx115_TBUS_5__wrong_speaker/RGI.mp3",
-    "clean": "assets/tcd__47M_sx115_TBUS_5__wrong_speaker/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s07_tcd__47M_sx115_TBUS_5__wrong_speaker.mp4",
-     "poster": "assets/video/r2_s07_tcd__47M_sx115_TBUS_5__wrong_speaker.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s07_tcd__47M_sx115_TBUS_5__wrong_speaker.mp4",
-     "poster": "assets/video/r1_s07_tcd__47M_sx115_TBUS_5__wrong_speaker.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__09F_si2056_TMETRO_5__blackout",
-   "n": 8,
-   "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "09F",
-   "sentence": "si2056",
-   "noise": "TMETRO",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 12.43,
-    "AV": 7.53,
-    "CADS": 7.14,
-    "RGI": 12.15
-   },
-   "rgi_minus_av": 4.62,
-   "wer_w2v": {
-    "noisy": 0.69,
-    "AO": 0.54,
-    "AV": 0.92,
-    "CADS": 1.0,
-    "RGI": 0.54,
-    "clean": 0.31
-   },
-   "tags": {
-    "RGI": "r2_s08_tcd__09F_si2056_TMETRO_5__blackout",
-    "AV": "r1_s08_tcd__09F_si2056_TMETRO_5__blackout"
-   },
-   "out_sec": 6.501,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__09F_si2056_TMETRO_5__blackout/input_av.mp4",
-     "poster": "assets/tcd__09F_si2056_TMETRO_5__blackout/input_av.jpg"
-    },
-    "AV": "assets/tcd__09F_si2056_TMETRO_5__blackout/AV.mp3",
-    "RGI": "assets/tcd__09F_si2056_TMETRO_5__blackout/RGI.mp3",
-    "clean": "assets/tcd__09F_si2056_TMETRO_5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s08_tcd__09F_si2056_TMETRO_5__blackout.mp4",
-     "poster": "assets/video/r2_s08_tcd__09F_si2056_TMETRO_5__blackout.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s08_tcd__09F_si2056_TMETRO_5__blackout.mp4",
-     "poster": "assets/video/r1_s08_tcd__09F_si2056_TMETRO_5__blackout.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__27M_sx254_TMETRO_5__occlusion",
-   "n": 9,
-   "text": "Do they allow atheists in church?",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "27M",
-   "sentence": "sx254",
-   "noise": "TMETRO",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 14.06,
-    "AV": 9.42,
-    "CADS": 9.11,
-    "RGI": 13.91
-   },
-   "rgi_minus_av": 4.49,
-   "wer_w2v": {
-    "noisy": 0.83,
-    "AO": 0.33,
-    "AV": 1.17,
-    "CADS": 1.0,
-    "RGI": 0.33,
-    "clean": 0.0
-   },
-   "tags": {
-    "RGI": "r2_s09_tcd__27M_sx254_TMETRO_5__occlusion",
-    "AV": "r1_s09_tcd__27M_sx254_TMETRO_5__occlusion"
-   },
-   "out_sec": 4.111,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__27M_sx254_TMETRO_5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__27M_sx254_TMETRO_5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__27M_sx254_TMETRO_5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__27M_sx254_TMETRO_5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__27M_sx254_TMETRO_5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s09_tcd__27M_sx254_TMETRO_5__occlusion.mp4",
-     "poster": "assets/video/r2_s09_tcd__27M_sx254_TMETRO_5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s09_tcd__27M_sx254_TMETRO_5__occlusion.mp4",
-     "poster": "assets/video/r1_s09_tcd__27M_sx254_TMETRO_5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__09F_sx104_OOFFICE_-5__occlusion",
-   "n": 10,
-   "text": "He stole a dime from a beggar.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "09F",
-   "sentence": "sx104",
-   "noise": "OOFFICE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 16.93,
-    "AV": 12.81,
-    "CADS": 13.27,
-    "RGI": 16.61
-   },
-   "rgi_minus_av": 3.8,
-   "wer_w2v": {
-    "noisy": 0.57,
-    "AO": 0.57,
-    "AV": 0.71,
-    "CADS": 0.71,
-    "RGI": 0.57,
-    "clean": 0.29
-   },
-   "tags": {
-    "RGI": "r2_s10_tcd__09F_sx104_OOFFICE_-5__occlusion",
-    "AV": "r1_s10_tcd__09F_sx104_OOFFICE_-5__occlusion"
-   },
-   "out_sec": 3.919,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__09F_sx104_OOFFICE_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__09F_sx104_OOFFICE_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__09F_sx104_OOFFICE_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__09F_sx104_OOFFICE_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__09F_sx104_OOFFICE_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s10_tcd__09F_sx104_OOFFICE_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s10_tcd__09F_sx104_OOFFICE_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s10_tcd__09F_sx104_OOFFICE_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s10_tcd__09F_sx104_OOFFICE_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__24M_sx10_SPSQUARE_5__occlusion",
-   "n": 11,
-   "text": "Are your grades higher or lower than Nancy's?",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "24M",
-   "sentence": "sx10",
-   "noise": "SPSQUARE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 10.78,
-    "AV": 7.22,
-    "CADS": 6.82,
-    "RGI": 10.79
-   },
-   "rgi_minus_av": 3.57,
-   "wer_w2v": {
-    "noisy": 0.38,
-    "AO": 0.12,
-    "AV": 0.38,
-    "CADS": 0.5,
-    "RGI": 0.12,
-    "clean": 0.25
-   },
-   "tags": {
-    "RGI": "r2_s11_tcd__24M_sx10_SPSQUARE_5__occlusion",
-    "AV": "r1_s11_tcd__24M_sx10_SPSQUARE_5__occlusion"
-   },
-   "out_sec": 4.602,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__24M_sx10_SPSQUARE_5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__24M_sx10_SPSQUARE_5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__24M_sx10_SPSQUARE_5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__24M_sx10_SPSQUARE_5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__24M_sx10_SPSQUARE_5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s11_tcd__24M_sx10_SPSQUARE_5__occlusion.mp4",
-     "poster": "assets/video/r2_s11_tcd__24M_sx10_SPSQUARE_5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s11_tcd__24M_sx10_SPSQUARE_5__occlusion.mp4",
-     "poster": "assets/video/r1_s11_tcd__24M_sx10_SPSQUARE_5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__47M_si1366_SPSQUARE_5__blackout",
-   "n": 12,
-   "text": "Our campus, unfortunately, owns no films.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "47M",
-   "sentence": "si1366",
-   "noise": "SPSQUARE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 13.8,
-    "AV": 10.47,
-    "CADS": 10.0,
-    "RGI": 13.83
-   },
-   "rgi_minus_av": 3.36,
-   "wer_w2v": {
-    "noisy": 0.67,
-    "AO": 0.5,
-    "AV": 0.67,
-    "CADS": 0.83,
-    "RGI": 0.5,
-    "clean": 0.17
-   },
-   "tags": {
-    "RGI": "r2_s12_tcd__47M_si1366_SPSQUARE_5__blackout",
-    "AV": "r1_s12_tcd__47M_si1366_SPSQUARE_5__blackout"
-   },
-   "out_sec": 4.751,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__47M_si1366_SPSQUARE_5__blackout/input_av.mp4",
-     "poster": "assets/tcd__47M_si1366_SPSQUARE_5__blackout/input_av.jpg"
-    },
-    "AV": "assets/tcd__47M_si1366_SPSQUARE_5__blackout/AV.mp3",
-    "RGI": "assets/tcd__47M_si1366_SPSQUARE_5__blackout/RGI.mp3",
-    "clean": "assets/tcd__47M_si1366_SPSQUARE_5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s12_tcd__47M_si1366_SPSQUARE_5__blackout.mp4",
-     "poster": "assets/video/r2_s12_tcd__47M_si1366_SPSQUARE_5__blackout.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s12_tcd__47M_si1366_SPSQUARE_5__blackout.mp4",
-     "poster": "assets/video/r1_s12_tcd__47M_si1366_SPSQUARE_5__blackout.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__09F_si2056_SPSQUARE_-5__blackout",
-   "n": 13,
-   "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "09F",
-   "sentence": "si2056",
-   "noise": "SPSQUARE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 10.37,
-    "AV": 7.24,
-    "CADS": 7.92,
-    "RGI": 10.4
-   },
-   "rgi_minus_av": 3.16,
-   "wer_w2v": {
-    "noisy": 0.77,
-    "AO": 0.54,
-    "AV": 0.92,
-    "CADS": 0.92,
-    "RGI": 0.54,
-    "clean": 0.31
-   },
-   "tags": {
-    "RGI": "r2_s13_tcd__09F_si2056_SPSQUARE_-5__blackout",
-    "AV": "r1_s13_tcd__09F_si2056_SPSQUARE_-5__blackout"
-   },
-   "out_sec": 6.501,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__09F_si2056_SPSQUARE_-5__blackout/input_av.mp4",
-     "poster": "assets/tcd__09F_si2056_SPSQUARE_-5__blackout/input_av.jpg"
-    },
-    "AV": "assets/tcd__09F_si2056_SPSQUARE_-5__blackout/AV.mp3",
-    "RGI": "assets/tcd__09F_si2056_SPSQUARE_-5__blackout/RGI.mp3",
-    "clean": "assets/tcd__09F_si2056_SPSQUARE_-5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s13_tcd__09F_si2056_SPSQUARE_-5__blackout.mp4",
-     "poster": "assets/video/r2_s13_tcd__09F_si2056_SPSQUARE_-5__blackout.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s13_tcd__09F_si2056_SPSQUARE_-5__blackout.mp4",
-     "poster": "assets/video/r1_s13_tcd__09F_si2056_SPSQUARE_-5__blackout.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__27M_si1227_TMETRO_5__occlusion",
-   "n": 14,
-   "text": "From it, spokes of order and degree led to the outward rim of the common man.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "27M",
-   "sentence": "si1227",
-   "noise": "TMETRO",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 10.27,
-    "AV": 6.79,
-    "CADS": 6.92,
-    "RGI": 9.9
-   },
-   "rgi_minus_av": 3.11,
-   "wer_w2v": {
-    "noisy": 0.56,
-    "AO": 0.38,
-    "AV": 0.5,
-    "CADS": 0.5,
-    "RGI": 0.38,
-    "clean": 0.0
-   },
-   "tags": {
-    "RGI": "r2_s14_tcd__27M_si1227_TMETRO_5__occlusion",
-    "AV": "r1_s14_tcd__27M_si1227_TMETRO_5__occlusion"
-   },
-   "out_sec": 6.757,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__27M_si1227_TMETRO_5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__27M_si1227_TMETRO_5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__27M_si1227_TMETRO_5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__27M_si1227_TMETRO_5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__27M_si1227_TMETRO_5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s14_tcd__27M_si1227_TMETRO_5__occlusion.mp4",
-     "poster": "assets/video/r2_s14_tcd__27M_si1227_TMETRO_5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s14_tcd__27M_si1227_TMETRO_5__occlusion.mp4",
-     "poster": "assets/video/r1_s14_tcd__27M_si1227_TMETRO_5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__56M_sx165_OOFFICE_-5__blackout",
-   "n": 15,
-   "text": "The easygoing zoologist relaxed throughout the voyage.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "56M",
-   "sentence": "sx165",
-   "noise": "OOFFICE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 12.35,
-    "AV": 9.13,
-    "CADS": 9.21,
-    "RGI": 12.21
-   },
-   "rgi_minus_av": 3.08,
-   "wer_w2v": {
-    "noisy": 0.57,
-    "AO": 0.57,
-    "AV": 1.0,
-    "CADS": 0.86,
-    "RGI": 0.43,
-    "clean": 0.43
-   },
-   "tags": {
-    "RGI": "r2_s15_tcd__56M_sx165_OOFFICE_-5__blackout",
-    "AV": "r1_s15_tcd__56M_sx165_OOFFICE_-5__blackout"
-   },
-   "out_sec": 5.114,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__56M_sx165_OOFFICE_-5__blackout/input_av.mp4",
-     "poster": "assets/tcd__56M_sx165_OOFFICE_-5__blackout/input_av.jpg"
-    },
-    "AV": "assets/tcd__56M_sx165_OOFFICE_-5__blackout/AV.mp3",
-    "RGI": "assets/tcd__56M_sx165_OOFFICE_-5__blackout/RGI.mp3",
-    "clean": "assets/tcd__56M_sx165_OOFFICE_-5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s15_tcd__56M_sx165_OOFFICE_-5__blackout.mp4",
-     "poster": "assets/video/r2_s15_tcd__56M_sx165_OOFFICE_-5__blackout.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s15_tcd__56M_sx165_OOFFICE_-5__blackout.mp4",
-     "poster": "assets/video/r1_s15_tcd__56M_sx165_OOFFICE_-5__blackout.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__56M_sx433_OOFFICE_-5__occlusion",
-   "n": 16,
-   "text": "The overweight charmer could slip poison into anyone's tea.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "56M",
-   "sentence": "sx433",
-   "noise": "OOFFICE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 13.84,
-    "AV": 10.98,
-    "CADS": 11.92,
-    "RGI": 13.75
-   },
-   "rgi_minus_av": 2.77,
-   "wer_w2v": {
-    "noisy": 0.33,
-    "AO": 0.22,
-    "AV": 0.89,
-    "CADS": 0.78,
-    "RGI": 0.33,
-    "clean": 0.22
-   },
-   "tags": {
-    "RGI": "r2_s16_tcd__56M_sx433_OOFFICE_-5__occlusion",
-    "AV": "r1_s16_tcd__56M_sx433_OOFFICE_-5__occlusion"
-   },
-   "out_sec": 5.498,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__56M_sx433_OOFFICE_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__56M_sx433_OOFFICE_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__56M_sx433_OOFFICE_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__56M_sx433_OOFFICE_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__56M_sx433_OOFFICE_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s16_tcd__56M_sx433_OOFFICE_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s16_tcd__56M_sx433_OOFFICE_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s16_tcd__56M_sx433_OOFFICE_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s16_tcd__56M_sx433_OOFFICE_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__49F_sx49_TMETRO_-5__blackout",
-   "n": 17,
-   "text": "At twilight on the twelfth day we'll have Chablis.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "49F",
-   "sentence": "sx49",
-   "noise": "TMETRO",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 9.63,
-    "AV": 6.9,
-    "CADS": 7.04,
-    "RGI": 9.56
-   },
-   "rgi_minus_av": 2.66,
-   "wer_w2v": {
-    "noisy": 1.0,
-    "AO": 0.67,
-    "AV": 0.78,
-    "CADS": 0.67,
-    "RGI": 0.33,
-    "clean": 0.11
-   },
-   "tags": {
-    "RGI": "r2_s17_tcd__49F_sx49_TMETRO_-5__blackout",
-    "AV": "r1_s17_tcd__49F_sx49_TMETRO_-5__blackout"
-   },
-   "out_sec": 4.666,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__49F_sx49_TMETRO_-5__blackout/input_av.mp4",
-     "poster": "assets/tcd__49F_sx49_TMETRO_-5__blackout/input_av.jpg"
-    },
-    "AV": "assets/tcd__49F_sx49_TMETRO_-5__blackout/AV.mp3",
-    "RGI": "assets/tcd__49F_sx49_TMETRO_-5__blackout/RGI.mp3",
-    "clean": "assets/tcd__49F_sx49_TMETRO_-5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s17_tcd__49F_sx49_TMETRO_-5__blackout.mp4",
-     "poster": "assets/video/r2_s17_tcd__49F_sx49_TMETRO_-5__blackout.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s17_tcd__49F_sx49_TMETRO_-5__blackout.mp4",
-     "poster": "assets/video/r1_s17_tcd__49F_sx49_TMETRO_-5__blackout.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__40F_sx294_TMETRO_-5__occlusion",
-   "n": 18,
-   "text": "Should giraffes be kept in small zoos?",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "40F",
-   "sentence": "sx294",
-   "noise": "TMETRO",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 9.98,
-    "AV": 7.37,
-    "CADS": 6.6,
-    "RGI": 9.87
-   },
-   "rgi_minus_av": 2.5,
-   "wer_w2v": {
-    "noisy": 1.0,
-    "AO": 0.86,
-    "AV": 1.0,
-    "CADS": 1.0,
-    "RGI": 0.86,
-    "clean": 0.29
-   },
-   "tags": {
-    "RGI": "r2_s18_tcd__40F_sx294_TMETRO_-5__occlusion",
-    "AV": "r1_s18_tcd__40F_sx294_TMETRO_-5__occlusion"
-   },
-   "out_sec": 4.602,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__40F_sx294_TMETRO_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__40F_sx294_TMETRO_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__40F_sx294_TMETRO_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__40F_sx294_TMETRO_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__40F_sx294_TMETRO_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s18_tcd__40F_sx294_TMETRO_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s18_tcd__40F_sx294_TMETRO_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s18_tcd__40F_sx294_TMETRO_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s18_tcd__40F_sx294_TMETRO_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__40F_sx294_TMETRO_5__occlusion",
-   "n": 19,
-   "text": "Should giraffes be kept in small zoos?",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "40F",
-   "sentence": "sx294",
-   "noise": "TMETRO",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 13.48,
-    "AV": 11.05,
-    "CADS": 11.01,
-    "RGI": 13.47
-   },
-   "rgi_minus_av": 2.42,
-   "wer_w2v": {
-    "noisy": 0.71,
-    "AO": 0.29,
-    "AV": 0.86,
-    "CADS": 0.86,
-    "RGI": 0.29,
-    "clean": 0.29
-   },
-   "tags": {
-    "RGI": "r2_s19_tcd__40F_sx294_TMETRO_5__occlusion",
-    "AV": "r1_s19_tcd__40F_sx294_TMETRO_5__occlusion"
-   },
-   "out_sec": 4.602,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__40F_sx294_TMETRO_5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__40F_sx294_TMETRO_5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__40F_sx294_TMETRO_5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__40F_sx294_TMETRO_5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__40F_sx294_TMETRO_5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s19_tcd__40F_sx294_TMETRO_5__occlusion.mp4",
-     "poster": "assets/video/r2_s19_tcd__40F_sx294_TMETRO_5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s19_tcd__40F_sx294_TMETRO_5__occlusion.mp4",
-     "poster": "assets/video/r1_s19_tcd__40F_sx294_TMETRO_5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__33F_sx218_TMETRO_-5__occlusion",
-   "n": 20,
-   "text": "Try to recall the events in chronological order.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "33F",
-   "sentence": "sx218",
-   "noise": "TMETRO",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 8.73,
-    "AV": 6.35,
-    "CADS": 5.99,
-    "RGI": 8.71
-   },
-   "rgi_minus_av": 2.36,
-   "wer_w2v": {
-    "noisy": 0.75,
-    "AO": 0.12,
-    "AV": 0.5,
-    "CADS": 0.38,
-    "RGI": 0.25,
-    "clean": 0.0
-   },
-   "tags": {
-    "RGI": "r2_s20_tcd__33F_sx218_TMETRO_-5__occlusion",
-    "AV": "r1_s20_tcd__33F_sx218_TMETRO_-5__occlusion"
-   },
-   "out_sec": 4.901,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__33F_sx218_TMETRO_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__33F_sx218_TMETRO_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__33F_sx218_TMETRO_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__33F_sx218_TMETRO_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__33F_sx218_TMETRO_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s20_tcd__33F_sx218_TMETRO_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s20_tcd__33F_sx218_TMETRO_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s20_tcd__33F_sx218_TMETRO_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s20_tcd__33F_sx218_TMETRO_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__24M_sx183_STRAFFIC_5__occlusion",
-   "n": 21,
-   "text": "Why else would Danny allow others to go?",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "24M",
-   "sentence": "sx183",
-   "noise": "STRAFFIC",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 9.39,
-    "AV": 7.11,
-    "CADS": 6.83,
-    "RGI": 9.29
-   },
-   "rgi_minus_av": 2.18,
-   "wer_w2v": {
-    "noisy": 0.0,
-    "AO": 0.12,
-    "AV": 0.5,
-    "CADS": 0.62,
-    "RGI": 0.25,
-    "clean": 0.12
-   },
-   "tags": {
-    "RGI": "r2_s21_tcd__24M_sx183_STRAFFIC_5__occlusion",
-    "AV": "r1_s21_tcd__24M_sx183_STRAFFIC_5__occlusion"
-   },
-   "out_sec": 4.41,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__24M_sx183_STRAFFIC_5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__24M_sx183_STRAFFIC_5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__24M_sx183_STRAFFIC_5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__24M_sx183_STRAFFIC_5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__24M_sx183_STRAFFIC_5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s21_tcd__24M_sx183_STRAFFIC_5__occlusion.mp4",
-     "poster": "assets/video/r2_s21_tcd__24M_sx183_STRAFFIC_5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s21_tcd__24M_sx183_STRAFFIC_5__occlusion.mp4",
-     "poster": "assets/video/r1_s21_tcd__24M_sx183_STRAFFIC_5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__24M_sx378_SPSQUARE_-5__occlusion",
-   "n": 22,
-   "text": "I just saw Jim near the new archeological museum.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "24M",
-   "sentence": "sx378",
-   "noise": "SPSQUARE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 4.48,
-    "AV": 2.6,
-    "CADS": 3.48,
-    "RGI": 4.55
-   },
-   "rgi_minus_av": 1.95,
-   "wer_w2v": {
-    "noisy": 0.33,
-    "AO": 0.22,
-    "AV": 0.33,
-    "CADS": 0.33,
-    "RGI": 0.22,
-    "clean": 0.11
-   },
-   "tags": {
-    "RGI": "r2_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion",
-    "AV": "r1_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion"
-   },
-   "out_sec": 5.285,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__24M_sx378_SPSQUARE_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__24M_sx378_SPSQUARE_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__24M_sx378_SPSQUARE_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__24M_sx378_SPSQUARE_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__24M_sx378_SPSQUARE_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__24M_sx183_SPSQUARE_-5__occlusion",
-   "n": 23,
-   "text": "Why else would Danny allow others to go?",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "24M",
-   "sentence": "sx183",
-   "noise": "SPSQUARE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 6.53,
-    "AV": 4.83,
-    "CADS": 5.33,
-    "RGI": 6.7
-   },
-   "rgi_minus_av": 1.87,
-   "wer_w2v": {
-    "noisy": 0.38,
-    "AO": 0.25,
-    "AV": 0.62,
-    "CADS": 0.38,
-    "RGI": 0.12,
-    "clean": 0.12
-   },
-   "tags": {
-    "RGI": "r2_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion",
-    "AV": "r1_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion"
-   },
-   "out_sec": 4.41,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__24M_sx183_SPSQUARE_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__24M_sx183_SPSQUARE_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__24M_sx183_SPSQUARE_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__24M_sx183_SPSQUARE_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__24M_sx183_SPSQUARE_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__33F_sx218_TMETRO_-5__wrong_speaker",
-   "n": 24,
-   "text": "Try to recall the events in chronological order.",
-   "dataset": "TCD-TIMIT",
-   "cond": "wrong_speaker",
-   "speaker": "33F",
-   "sentence": "sx218",
-   "noise": "TMETRO",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 8.73,
-    "AV": 5.14,
-    "CADS": 5.26,
-    "RGI": 6.98
-   },
-   "rgi_minus_av": 1.84,
-   "wer_w2v": {
-    "noisy": 0.75,
-    "AO": 0.12,
-    "AV": 0.25,
-    "CADS": 0.62,
-    "RGI": 0.12,
-    "clean": 0.0
-   },
-   "tags": {
-    "RGI": "r2_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker",
-    "AV": "r1_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker"
-   },
-   "out_sec": 4.901,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__33F_sx218_TMETRO_-5__wrong_speaker/input_av.mp4",
-     "poster": "assets/tcd__33F_sx218_TMETRO_-5__wrong_speaker/input_av.jpg"
-    },
-    "AV": "assets/tcd__33F_sx218_TMETRO_-5__wrong_speaker/AV.mp3",
-    "RGI": "assets/tcd__33F_sx218_TMETRO_-5__wrong_speaker/RGI.mp3",
-    "clean": "assets/tcd__33F_sx218_TMETRO_-5__wrong_speaker/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker.mp4",
-     "poster": "assets/video/r2_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker.mp4",
-     "poster": "assets/video/r1_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__56M_si2053_OOFFICE_-5__blackout",
-   "n": 25,
-   "text": "He sized up the situation and shook his head.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "56M",
-   "sentence": "si2053",
-   "noise": "OOFFICE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 13.12,
-    "AV": 11.44,
-    "CADS": 10.07,
-    "RGI": 13.22
-   },
-   "rgi_minus_av": 1.78,
-   "wer_w2v": {
-    "noisy": 0.0,
-    "AO": 0.0,
-    "AV": 0.22,
-    "CADS": 0.22,
-    "RGI": 0.0,
-    "clean": 0.0
-   },
-   "tags": {
-    "RGI": "r2_s25_tcd__56M_si2053_OOFFICE_-5__blackout",
-    "AV": "r1_s25_tcd__56M_si2053_OOFFICE_-5__blackout"
-   },
-   "out_sec": 4.581,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__56M_si2053_OOFFICE_-5__blackout/input_av.mp4",
-     "poster": "assets/tcd__56M_si2053_OOFFICE_-5__blackout/input_av.jpg"
-    },
-    "AV": "assets/tcd__56M_si2053_OOFFICE_-5__blackout/AV.mp3",
-    "RGI": "assets/tcd__56M_si2053_OOFFICE_-5__blackout/RGI.mp3",
-    "clean": "assets/tcd__56M_si2053_OOFFICE_-5__blackout/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s25_tcd__56M_si2053_OOFFICE_-5__blackout.mp4",
-     "poster": "assets/video/r2_s25_tcd__56M_si2053_OOFFICE_-5__blackout.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s25_tcd__56M_si2053_OOFFICE_-5__blackout.mp4",
-     "poster": "assets/video/r1_s25_tcd__56M_si2053_OOFFICE_-5__blackout.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__26M_sx216_STRAFFIC_-5__occlusion",
-   "n": 26,
-   "text": "The small boy put the worm on the hook.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "26M",
-   "sentence": "sx216",
-   "noise": "STRAFFIC",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 5.22,
-    "AV": 7.92,
-    "CADS": 7.63,
-    "RGI": 6.48
-   },
-   "rgi_minus_av": -1.44,
-   "wer_w2v": {
-    "noisy": 0.44,
-    "AO": 0.56,
-    "AV": 0.89,
-    "CADS": 0.67,
-    "RGI": 0.44,
-    "clean": 0.0
-   },
-   "tags": {
-    "RGI": "r2_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion",
-    "AV": "r1_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion"
-   },
-   "out_sec": 4.389,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__26M_sx216_STRAFFIC_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__26M_sx216_STRAFFIC_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__26M_sx216_STRAFFIC_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__26M_sx216_STRAFFIC_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__26M_sx216_STRAFFIC_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__09F_sx195_SPSQUARE_-5__occlusion",
-   "n": 27,
-   "text": "Would you allow acts of violence?",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "09F",
-   "sentence": "sx195",
-   "noise": "SPSQUARE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 0.74,
-    "AV": 4.35,
-    "CADS": 3.73,
-    "RGI": 1.4
-   },
-   "rgi_minus_av": -2.95,
-   "wer_w2v": {
-    "noisy": 1.0,
-    "AO": 0.83,
-    "AV": 1.0,
-    "CADS": 1.0,
-    "RGI": 0.83,
-    "clean": 0.33
-   },
-   "tags": {
-    "RGI": "r2_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion",
-    "AV": "r1_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion"
-   },
-   "out_sec": 3.919,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__09F_sx195_SPSQUARE_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__09F_sx195_SPSQUARE_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__09F_sx195_SPSQUARE_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__09F_sx195_SPSQUARE_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__09F_sx195_SPSQUARE_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion.jpg"
-    }
-   }
-  },
-  {
-   "kind": "comparison",
-   "id": "tcd__56M_sx344_SPSQUARE_-5__occlusion",
-   "n": 28,
-   "text": "I know I didn't meet her early enough.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "56M",
-   "sentence": "sx344",
-   "noise": "SPSQUARE",
-   "snr_db": -5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 1.69,
-    "AV": 5.85,
-    "CADS": 5.12,
-    "RGI": 2.34
-   },
-   "rgi_minus_av": -3.51,
-   "wer_w2v": {
-    "noisy": 0.75,
-    "AO": 0.38,
-    "AV": 0.62,
-    "CADS": 0.62,
-    "RGI": 0.25,
-    "clean": 0.25
-   },
-   "tags": {
-    "RGI": "r2_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion",
-    "AV": "r1_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion"
-   },
-   "out_sec": 4.005,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__56M_sx344_SPSQUARE_-5__occlusion/input_av.mp4",
-     "poster": "assets/tcd__56M_sx344_SPSQUARE_-5__occlusion/input_av.jpg"
-    },
-    "AV": "assets/tcd__56M_sx344_SPSQUARE_-5__occlusion/AV.mp3",
-    "RGI": "assets/tcd__56M_sx344_SPSQUARE_-5__occlusion/RGI.mp3",
-    "clean": "assets/tcd__56M_sx344_SPSQUARE_-5__occlusion/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r2_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion.mp4",
-     "poster": "assets/video/r2_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion.jpg"
-    },
-    "robot_AV": {
-     "src": "assets/video/r1_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion.mp4",
-     "poster": "assets/video/r1_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion.jpg"
-    }
-   }
+   ]
   }
  ],
- "showcase": [
-  {
-   "kind": "showcase",
-   "id": "tcd__clean__09F_sx197_OOFFICE_5",
-   "n": 1,
-   "text": "Draw each graph on a new axis.",
-   "dataset": "TCD-TIMIT",
-   "cond": "clean",
-   "speaker": "09F",
-   "sentence": "sx197",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 17.84,
-    "AV": 17.98,
-    "CADS": 17.3,
-    "RGI": 18.31
-   },
-   "rgi_minus_av": 0.33,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s01_tcd__clean__09F_sx197_OOFFICE_5"
-   },
-   "out_sec": 4.218,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__clean__09F_sx197_OOFFICE_5/input_av.mp4",
-     "poster": "assets/tcd__clean__09F_sx197_OOFFICE_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__clean__09F_sx197_OOFFICE_5/RGI.mp3",
-    "clean": "assets/tcd__clean__09F_sx197_OOFFICE_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s01_tcd__clean__09F_sx197_OOFFICE_5.mp4",
-     "poster": "assets/video/r3_s01_tcd__clean__09F_sx197_OOFFICE_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__clean__47M_si1629_TBUS_5",
-   "n": 2,
-   "text": "Have you got our keys handy?",
-   "dataset": "TCD-TIMIT",
-   "cond": "clean",
-   "speaker": "47M",
-   "sentence": "si1629",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 16.74,
-    "AV": 16.59,
-    "CADS": 15.48,
-    "RGI": 17.2
-   },
-   "rgi_minus_av": 0.61,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s02_tcd__clean__47M_si1629_TBUS_5"
-   },
-   "out_sec": 3.471,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__clean__47M_si1629_TBUS_5/input_av.mp4",
-     "poster": "assets/tcd__clean__47M_si1629_TBUS_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__clean__47M_si1629_TBUS_5/RGI.mp3",
-    "clean": "assets/tcd__clean__47M_si1629_TBUS_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s02_tcd__clean__47M_si1629_TBUS_5.mp4",
-     "poster": "assets/video/r3_s02_tcd__clean__47M_si1629_TBUS_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__occlusion__56M_sx248_OOFFICE_5",
-   "n": 3,
-   "text": "Reading in poor light gives you eyestrain.",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "56M",
-   "sentence": "sx248",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 16.23,
-    "AV": 12.37,
-    "CADS": 12.34,
-    "RGI": 16.2
-   },
-   "rgi_minus_av": 3.83,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s03_tcd__occlusion__56M_sx248_OOFFICE_5"
-   },
-   "out_sec": 4.239,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__occlusion__56M_sx248_OOFFICE_5/input_av.mp4",
-     "poster": "assets/tcd__occlusion__56M_sx248_OOFFICE_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__occlusion__56M_sx248_OOFFICE_5/RGI.mp3",
-    "clean": "assets/tcd__occlusion__56M_sx248_OOFFICE_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s03_tcd__occlusion__56M_sx248_OOFFICE_5.mp4",
-     "poster": "assets/video/r3_s03_tcd__occlusion__56M_sx248_OOFFICE_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__occlusion__47M_si1629_OOFFICE_5",
-   "n": 4,
-   "text": "Have you got our keys handy?",
-   "dataset": "TCD-TIMIT",
-   "cond": "occlusion",
-   "speaker": "47M",
-   "sentence": "si1629",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 17.0,
-    "AV": 14.69,
-    "CADS": 14.43,
-    "RGI": 16.96
-   },
-   "rgi_minus_av": 2.27,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s04_tcd__occlusion__47M_si1629_OOFFICE_5"
-   },
-   "out_sec": 3.471,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__occlusion__47M_si1629_OOFFICE_5/input_av.mp4",
-     "poster": "assets/tcd__occlusion__47M_si1629_OOFFICE_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__occlusion__47M_si1629_OOFFICE_5/RGI.mp3",
-    "clean": "assets/tcd__occlusion__47M_si1629_OOFFICE_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s04_tcd__occlusion__47M_si1629_OOFFICE_5.mp4",
-     "poster": "assets/video/r3_s04_tcd__occlusion__47M_si1629_OOFFICE_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__blackout__47M_sx198_TBUS_5",
-   "n": 5,
-   "text": "Norwegian sweaters are made of lamb's wool.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "47M",
-   "sentence": "sx198",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 15.58,
-    "AV": 15.47,
-    "CADS": 15.67,
-    "RGI": 15.98
-   },
-   "rgi_minus_av": 0.51,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s05_tcd__blackout__47M_sx198_TBUS_5"
-   },
-   "out_sec": 4.303,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__blackout__47M_sx198_TBUS_5/input_av.mp4",
-     "poster": "assets/tcd__blackout__47M_sx198_TBUS_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__blackout__47M_sx198_TBUS_5/RGI.mp3",
-    "clean": "assets/tcd__blackout__47M_sx198_TBUS_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s05_tcd__blackout__47M_sx198_TBUS_5.mp4",
-     "poster": "assets/video/r3_s05_tcd__blackout__47M_sx198_TBUS_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__blackout__09F_sx197_OOFFICE_5",
-   "n": 6,
-   "text": "Draw each graph on a new axis.",
-   "dataset": "TCD-TIMIT",
-   "cond": "blackout",
-   "speaker": "09F",
-   "sentence": "sx197",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 17.84,
-    "AV": 15.27,
-    "CADS": 15.25,
-    "RGI": 17.73
-   },
-   "rgi_minus_av": 2.46,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s06_tcd__blackout__09F_sx197_OOFFICE_5"
-   },
-   "out_sec": 4.218,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__blackout__09F_sx197_OOFFICE_5/input_av.mp4",
-     "poster": "assets/tcd__blackout__09F_sx197_OOFFICE_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__blackout__09F_sx197_OOFFICE_5/RGI.mp3",
-    "clean": "assets/tcd__blackout__09F_sx197_OOFFICE_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s06_tcd__blackout__09F_sx197_OOFFICE_5.mp4",
-     "poster": "assets/video/r3_s06_tcd__blackout__09F_sx197_OOFFICE_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__wrong_speaker__47M_sx200_TBUS_5",
-   "n": 7,
-   "text": "Ralph controlled the stopwatch from the bleachers.",
-   "dataset": "TCD-TIMIT",
-   "cond": "wrong_speaker",
-   "speaker": "47M",
-   "sentence": "sx200",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 17.85,
-    "AV": 17.67,
-    "CADS": 16.94,
-    "RGI": 18.1
-   },
-   "rgi_minus_av": 0.43,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s07_tcd__wrong_speaker__47M_sx200_TBUS_5"
-   },
-   "out_sec": 4.41,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__wrong_speaker__47M_sx200_TBUS_5/input_av.mp4",
-     "poster": "assets/tcd__wrong_speaker__47M_sx200_TBUS_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__wrong_speaker__47M_sx200_TBUS_5/RGI.mp3",
-    "clean": "assets/tcd__wrong_speaker__47M_sx200_TBUS_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s07_tcd__wrong_speaker__47M_sx200_TBUS_5.mp4",
-     "poster": "assets/video/r3_s07_tcd__wrong_speaker__47M_sx200_TBUS_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__wrong_speaker__40F_sx207_TBUS_5",
-   "n": 8,
-   "text": "Do you hear the sleigh bells ringing?",
-   "dataset": "TCD-TIMIT",
-   "cond": "wrong_speaker",
-   "speaker": "40F",
-   "sentence": "sx207",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 17.14,
-    "AV": 16.51,
-    "CADS": 16.17,
-    "RGI": 17.2
-   },
-   "rgi_minus_av": 0.69,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s08_tcd__wrong_speaker__40F_sx207_TBUS_5"
-   },
-   "out_sec": 4.09,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__wrong_speaker__40F_sx207_TBUS_5/input_av.mp4",
-     "poster": "assets/tcd__wrong_speaker__40F_sx207_TBUS_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__wrong_speaker__40F_sx207_TBUS_5/RGI.mp3",
-    "clean": "assets/tcd__wrong_speaker__40F_sx207_TBUS_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s08_tcd__wrong_speaker__40F_sx207_TBUS_5.mp4",
-     "poster": "assets/video/r3_s08_tcd__wrong_speaker__40F_sx207_TBUS_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__freeze__26M_sx216_OOFFICE_5",
-   "n": 9,
-   "text": "The small boy put the worm on the hook.",
-   "dataset": "TCD-TIMIT",
-   "cond": "freeze",
-   "speaker": "26M",
-   "sentence": "sx216",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 16.75,
-    "AV": 17.54,
-    "CADS": 17.48,
-    "RGI": 17.68
-   },
-   "rgi_minus_av": 0.14,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s09_tcd__freeze__26M_sx216_OOFFICE_5"
-   },
-   "out_sec": 4.389,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__freeze__26M_sx216_OOFFICE_5/input_av.mp4",
-     "poster": "assets/tcd__freeze__26M_sx216_OOFFICE_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__freeze__26M_sx216_OOFFICE_5/RGI.mp3",
-    "clean": "assets/tcd__freeze__26M_sx216_OOFFICE_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s09_tcd__freeze__26M_sx216_OOFFICE_5.mp4",
-     "poster": "assets/video/r3_s09_tcd__freeze__26M_sx216_OOFFICE_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__freeze__47M_si1629_TBUS_5",
-   "n": 10,
-   "text": "Have you got our keys handy?",
-   "dataset": "TCD-TIMIT",
-   "cond": "freeze",
-   "speaker": "47M",
-   "sentence": "si1629",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 16.74,
-    "AV": 16.67,
-    "CADS": 15.49,
-    "RGI": 17.25
-   },
-   "rgi_minus_av": 0.58,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s10_tcd__freeze__47M_si1629_TBUS_5"
-   },
-   "out_sec": 3.471,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__freeze__47M_si1629_TBUS_5/input_av.mp4",
-     "poster": "assets/tcd__freeze__47M_si1629_TBUS_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__freeze__47M_si1629_TBUS_5/RGI.mp3",
-    "clean": "assets/tcd__freeze__47M_si1629_TBUS_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s10_tcd__freeze__47M_si1629_TBUS_5.mp4",
-     "poster": "assets/video/r3_s10_tcd__freeze__47M_si1629_TBUS_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__avoffset__47M_si1629_TBUS_5",
-   "n": 11,
-   "text": "Have you got our keys handy?",
-   "dataset": "TCD-TIMIT",
-   "cond": "avoffset",
-   "speaker": "47M",
-   "sentence": "si1629",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 16.74,
-    "AV": 16.58,
-    "CADS": 15.48,
-    "RGI": 17.17
-   },
-   "rgi_minus_av": 0.59,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s11_tcd__avoffset__47M_si1629_TBUS_5"
-   },
-   "out_sec": 3.471,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__avoffset__47M_si1629_TBUS_5/input_av.mp4",
-     "poster": "assets/tcd__avoffset__47M_si1629_TBUS_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__avoffset__47M_si1629_TBUS_5/RGI.mp3",
-    "clean": "assets/tcd__avoffset__47M_si1629_TBUS_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s11_tcd__avoffset__47M_si1629_TBUS_5.mp4",
-     "poster": "assets/video/r3_s11_tcd__avoffset__47M_si1629_TBUS_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__avoffset__26M_sx216_OOFFICE_5",
-   "n": 12,
-   "text": "The small boy put the worm on the hook.",
-   "dataset": "TCD-TIMIT",
-   "cond": "avoffset",
-   "speaker": "26M",
-   "sentence": "sx216",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 16.75,
-    "AV": 17.57,
-    "CADS": 17.58,
-    "RGI": 17.7
-   },
-   "rgi_minus_av": 0.13,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s12_tcd__avoffset__26M_sx216_OOFFICE_5"
-   },
-   "out_sec": 4.389,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__avoffset__26M_sx216_OOFFICE_5/input_av.mp4",
-     "poster": "assets/tcd__avoffset__26M_sx216_OOFFICE_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__avoffset__26M_sx216_OOFFICE_5/RGI.mp3",
-    "clean": "assets/tcd__avoffset__26M_sx216_OOFFICE_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s12_tcd__avoffset__26M_sx216_OOFFICE_5.mp4",
-     "poster": "assets/video/r3_s12_tcd__avoffset__26M_sx216_OOFFICE_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__lowres__47M_sx198_TBUS_5",
-   "n": 13,
-   "text": "Norwegian sweaters are made of lamb's wool.",
-   "dataset": "TCD-TIMIT",
-   "cond": "lowres",
-   "speaker": "47M",
-   "sentence": "sx198",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 15.58,
-    "AV": 16.51,
-    "CADS": 16.37,
-    "RGI": 16.61
-   },
-   "rgi_minus_av": 0.1,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s13_tcd__lowres__47M_sx198_TBUS_5"
-   },
-   "out_sec": 4.303,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__lowres__47M_sx198_TBUS_5/input_av.mp4",
-     "poster": "assets/tcd__lowres__47M_sx198_TBUS_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__lowres__47M_sx198_TBUS_5/RGI.mp3",
-    "clean": "assets/tcd__lowres__47M_sx198_TBUS_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s13_tcd__lowres__47M_sx198_TBUS_5.mp4",
-     "poster": "assets/video/r3_s13_tcd__lowres__47M_sx198_TBUS_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "tcd__lowres__26M_sx216_OOFFICE_5",
-   "n": 14,
-   "text": "The small boy put the worm on the hook.",
-   "dataset": "TCD-TIMIT",
-   "cond": "lowres",
-   "speaker": "26M",
-   "sentence": "sx216",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "mouthcrop",
-   "si_sdr": {
-    "AO": 16.75,
-    "AV": 17.44,
-    "CADS": 17.57,
-    "RGI": 17.59
-   },
-   "rgi_minus_av": 0.15,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s14_tcd__lowres__26M_sx216_OOFFICE_5"
-   },
-   "out_sec": 4.389,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/tcd__lowres__26M_sx216_OOFFICE_5/input_av.mp4",
-     "poster": "assets/tcd__lowres__26M_sx216_OOFFICE_5/input_av.jpg"
-    },
-    "RGI": "assets/tcd__lowres__26M_sx216_OOFFICE_5/RGI.mp3",
-    "clean": "assets/tcd__lowres__26M_sx216_OOFFICE_5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s14_tcd__lowres__26M_sx216_OOFFICE_5.mp4",
-     "poster": "assets/video/r3_s14_tcd__lowres__26M_sx216_OOFFICE_5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "grid__clean__s34_bgbe4a_TBUS_+5",
-   "n": 15,
-   "text": "bin green by e four again",
-   "dataset": "GRID",
-   "cond": "clean",
-   "speaker": "s34",
-   "sentence": "bgbe4a",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "fullface",
-   "si_sdr": {
-    "AO": 13.51,
-    "AV": 13.33,
-    "CADS": 12.72,
-    "RGI": 13.63
-   },
-   "rgi_minus_av": 0.3,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s15_grid__clean__s34_bgbe4a_TBUS_+5"
-   },
-   "out_sec": 2.05,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/grid__clean__s34_bgbe4a_TBUS_+5/input_av.mp4",
-     "poster": "assets/grid__clean__s34_bgbe4a_TBUS_+5/input_av.jpg"
-    },
-    "fullface": "assets/grid__clean__s34_bgbe4a_TBUS_+5/fullface.mp4",
-    "RGI": "assets/grid__clean__s34_bgbe4a_TBUS_+5/RGI.mp3",
-    "clean": "assets/grid__clean__s34_bgbe4a_TBUS_+5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s15_grid__clean__s34_bgbe4a_TBUS_+5.mp4",
-     "poster": "assets/video/r3_s15_grid__clean__s34_bgbe4a_TBUS_+5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "grid__occlusion__s34_bgbe4a_TBUS_+5",
-   "n": 16,
-   "text": "bin green by e four again",
-   "dataset": "GRID",
-   "cond": "occlusion",
-   "speaker": "s34",
-   "sentence": "bgbe4a",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "fullface",
-   "si_sdr": {
-    "AO": 13.51,
-    "AV": 13.22,
-    "CADS": 12.76,
-    "RGI": 13.59
-   },
-   "rgi_minus_av": 0.37,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s16_grid__occlusion__s34_bgbe4a_TBUS_+5"
-   },
-   "out_sec": 2.05,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/grid__occlusion__s34_bgbe4a_TBUS_+5/input_av.mp4",
-     "poster": "assets/grid__occlusion__s34_bgbe4a_TBUS_+5/input_av.jpg"
-    },
-    "fullface": "assets/grid__occlusion__s34_bgbe4a_TBUS_+5/fullface.mp4",
-    "RGI": "assets/grid__occlusion__s34_bgbe4a_TBUS_+5/RGI.mp3",
-    "clean": "assets/grid__occlusion__s34_bgbe4a_TBUS_+5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s16_grid__occlusion__s34_bgbe4a_TBUS_+5.mp4",
-     "poster": "assets/video/r3_s16_grid__occlusion__s34_bgbe4a_TBUS_+5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "grid__blackout__s11_lbwq5a_OOFFICE_+5",
-   "n": 17,
-   "text": "lay blue with q five again",
-   "dataset": "GRID",
-   "cond": "blackout",
-   "speaker": "s11",
-   "sentence": "lbwq5a",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "fullface",
-   "si_sdr": {
-    "AO": 12.04,
-    "AV": 12.73,
-    "CADS": 12.11,
-    "RGI": 12.77
-   },
-   "rgi_minus_av": 0.04,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s17_grid__blackout__s11_lbwq5a_OOFFICE_+5"
-   },
-   "out_sec": 1.89,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/grid__blackout__s11_lbwq5a_OOFFICE_+5/input_av.mp4",
-     "poster": "assets/grid__blackout__s11_lbwq5a_OOFFICE_+5/input_av.jpg"
-    },
-    "fullface": "assets/grid__blackout__s11_lbwq5a_OOFFICE_+5/fullface.mp4",
-    "RGI": "assets/grid__blackout__s11_lbwq5a_OOFFICE_+5/RGI.mp3",
-    "clean": "assets/grid__blackout__s11_lbwq5a_OOFFICE_+5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s17_grid__blackout__s11_lbwq5a_OOFFICE_+5.mp4",
-     "poster": "assets/video/r3_s17_grid__blackout__s11_lbwq5a_OOFFICE_+5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5",
-   "n": 18,
-   "text": "place white in s seven now",
-   "dataset": "GRID",
-   "cond": "wrong_speaker_anysent",
-   "speaker": "s34",
-   "sentence": "pwis7n",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "fullface",
-   "si_sdr": {
-    "AO": 12.92,
-    "AV": 8.63,
-    "CADS": 8.27,
-    "RGI": 13.65
-   },
-   "rgi_minus_av": 5.02,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s18_grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5"
-   },
-   "out_sec": 2.34,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5/input_av.mp4",
-     "poster": "assets/grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5/input_av.jpg"
-    },
-    "fullface": "assets/grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5/fullface.mp4",
-    "RGI": "assets/grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5/RGI.mp3",
-    "clean": "assets/grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s18_grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5.mp4",
-     "poster": "assets/video/r3_s18_grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "grid__freeze__s16_lwid2a_TBUS_+5",
-   "n": 19,
-   "text": "lay white in d two again",
-   "dataset": "GRID",
-   "cond": "freeze",
-   "speaker": "s16",
-   "sentence": "lwid2a",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "fullface",
-   "si_sdr": {
-    "AO": 10.82,
-    "AV": 11.12,
-    "CADS": 11.2,
-    "RGI": 11.23
-   },
-   "rgi_minus_av": 0.11,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s19_grid__freeze__s16_lwid2a_TBUS_+5"
-   },
-   "out_sec": 1.83,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/grid__freeze__s16_lwid2a_TBUS_+5/input_av.mp4",
-     "poster": "assets/grid__freeze__s16_lwid2a_TBUS_+5/input_av.jpg"
-    },
-    "fullface": "assets/grid__freeze__s16_lwid2a_TBUS_+5/fullface.mp4",
-    "RGI": "assets/grid__freeze__s16_lwid2a_TBUS_+5/RGI.mp3",
-    "clean": "assets/grid__freeze__s16_lwid2a_TBUS_+5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s19_grid__freeze__s16_lwid2a_TBUS_+5.mp4",
-     "poster": "assets/video/r3_s19_grid__freeze__s16_lwid2a_TBUS_+5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "grid__avoffset__s34_bgbe4a_TBUS_+5",
-   "n": 20,
-   "text": "bin green by e four again",
-   "dataset": "GRID",
-   "cond": "avoffset",
-   "speaker": "s34",
-   "sentence": "bgbe4a",
-   "noise": "TBUS",
-   "snr_db": 5,
-   "face": "fullface",
-   "si_sdr": {
-    "AO": 13.51,
-    "AV": 13.35,
-    "CADS": 12.7,
-    "RGI": 13.69
-   },
-   "rgi_minus_av": 0.34,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s20_grid__avoffset__s34_bgbe4a_TBUS_+5"
-   },
-   "out_sec": 2.05,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/grid__avoffset__s34_bgbe4a_TBUS_+5/input_av.mp4",
-     "poster": "assets/grid__avoffset__s34_bgbe4a_TBUS_+5/input_av.jpg"
-    },
-    "fullface": "assets/grid__avoffset__s34_bgbe4a_TBUS_+5/fullface.mp4",
-    "RGI": "assets/grid__avoffset__s34_bgbe4a_TBUS_+5/RGI.mp3",
-    "clean": "assets/grid__avoffset__s34_bgbe4a_TBUS_+5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s20_grid__avoffset__s34_bgbe4a_TBUS_+5.mp4",
-     "poster": "assets/video/r3_s20_grid__avoffset__s34_bgbe4a_TBUS_+5.jpg"
-    }
-   }
-  },
-  {
-   "kind": "showcase",
-   "id": "grid__lowres__s11_lbwq5a_OOFFICE_+5",
-   "n": 21,
-   "text": "lay blue with q five again",
-   "dataset": "GRID",
-   "cond": "lowres",
-   "speaker": "s11",
-   "sentence": "lbwq5a",
-   "noise": "OOFFICE",
-   "snr_db": 5,
-   "face": "fullface",
-   "si_sdr": {
-    "AO": 12.04,
-    "AV": 13.13,
-    "CADS": 12.29,
-    "RGI": 12.96
-   },
-   "rgi_minus_av": -0.17,
-   "wer_w2v": null,
-   "tags": {
-    "RGI": "r3_s21_grid__lowres__s11_lbwq5a_OOFFICE_+5"
-   },
-   "out_sec": 1.89,
-   "infer_wait": 1.2,
-   "hosted": {
-    "input": {
-     "src": "assets/grid__lowres__s11_lbwq5a_OOFFICE_+5/input_av.mp4",
-     "poster": "assets/grid__lowres__s11_lbwq5a_OOFFICE_+5/input_av.jpg"
-    },
-    "fullface": "assets/grid__lowres__s11_lbwq5a_OOFFICE_+5/fullface.mp4",
-    "RGI": "assets/grid__lowres__s11_lbwq5a_OOFFICE_+5/RGI.mp3",
-    "clean": "assets/grid__lowres__s11_lbwq5a_OOFFICE_+5/clean.mp3",
-    "robot_RGI": {
-     "src": "assets/video/r3_s21_grid__lowres__s11_lbwq5a_OOFFICE_+5.mp4",
-     "poster": "assets/video/r3_s21_grid__lowres__s11_lbwq5a_OOFFICE_+5.jpg"
-    }
-   }
-  }
- ],
- "full": {
-  "comparison_AV": {
-   "src": "assets/video/full/comparison_AV.mp4",
-   "poster": "assets/video/full/comparison_AV.jpg",
-   "duration": 398.422993,
-   "size_mb": 10.98361873626709
-  },
-  "comparison_RGI": {
-   "src": "assets/video/full/comparison_RGI.mp4",
-   "poster": "assets/video/full/comparison_RGI.jpg",
-   "duration": 399.44,
-   "size_mb": 10.66505241394043
-  },
-  "comparison_paired": {
-   "src": "assets/video/full/comparison_paired.mp4",
-   "poster": "assets/video/full/comparison_paired.jpg",
-   "duration": 798.326009,
-   "size_mb": 21.65100383758545
-  },
-  "showcase_RGI": {
-   "src": "assets/video/full/showcase_RGI.mp4",
-   "poster": "assets/video/full/showcase_RGI.jpg",
-   "duration": 235.532993,
-   "size_mb": 6.045712471008301
-  }
- }
+ "note": "si_sdr_db.noisy is computed from the noisy input and the clean reference; AV and RGI are the stored per-clip values."
 }

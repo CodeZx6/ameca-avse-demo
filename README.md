@@ -1,5 +1,5 @@
-# Reliability-Guided Inference (RGI) on an Ameca humanoid: listening and robot videos
+# Reliability-Guided Inference (RGI) on an Ameca humanoid: demo page
 
-This repository hosts a static demo page for audio-visual speech enhancement under corrupted visual input. For TCD-TIMIT and GRID utterances mixed with DEMAND noise, it plays the noisy input video, the output of a frozen audio-visual diffusion backbone (AV-UDiffSE) with and without reliability-guided inference (RGI), the clean reference, and recordings of an Ameca humanoid voicing each enhanced answer. Per-clip SI-SDR values are illustrations for the played examples, not the paper's table numbers. The authors are anonymous because the paper is under double-blind review.
+Static demo page for audio-visual speech enhancement under visual distribution shift. Each clip shows the model's input video, synchronised with the noisy input audio, side by side with an Ameca humanoid voicing the enhanced speech. The first tab shows RGI across seven visual shifts; the other tabs compare the frozen audio-visual backbone (AV-UDiffSE) with the same backbone + RGI. Per-clip SI-SDR values illustrate the played examples; they are not the paper's table numbers. The authors are anonymous because the paper is under double-blind review.
 
 Live page: https://codezx6.github.io/ameca-avse-demo/
