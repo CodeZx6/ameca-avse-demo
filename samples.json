@@ -1,58 +1,12 @@
 {
+ "note": "Per-item data for the demo page. si_sdr_db: AV and RGI are the stored per-clip values; noisy is computed from the noisy input and the clean reference. Audio files are loudness-matched (EBU R128 -23 LUFS, then one shared gain per item to a -1 dBFS peak).",
  "tabs": [
   {
    "id": "rgi",
    "name": "RGI across visual shifts",
    "items": [
     {
-     "text": "Draw each graph on a new axis.",
-     "visual_shift": "Clean",
-     "corpus": "TCD-TIMIT",
-     "noise": "Office",
-     "snr_db": 5,
-     "si_sdr_db": {
-      "AV": 17.98,
-      "RGI": 18.31,
-      "noisy": 5.0
-     },
-     "clips": {
-      "backbone_rgi": "assets/clips/r3_s01_tcd__clean__09F_sx197_OOFFICE_5.mp4"
-     },
-     "clean": "assets/tcd__clean__09F_sx197_OOFFICE_5/clean.mp3"
-    },
-    {
-     "text": "Have you got our keys handy?",
-     "visual_shift": "Clean",
-     "corpus": "TCD-TIMIT",
-     "noise": "Bus",
-     "snr_db": 5,
-     "si_sdr_db": {
-      "AV": 16.59,
-      "RGI": 17.2,
-      "noisy": 5.0
-     },
-     "clips": {
-      "backbone_rgi": "assets/clips/r3_s02_tcd__clean__47M_si1629_TBUS_5.mp4"
-     },
-     "clean": "assets/tcd__clean__47M_si1629_TBUS_5/clean.mp3"
-    },
-    {
-     "text": "bin green by e four again",
-     "visual_shift": "Clean",
-     "corpus": "GRID",
-     "noise": "Bus",
-     "snr_db": 5,
-     "si_sdr_db": {
-      "AV": 13.33,
-      "RGI": 13.63,
-      "noisy": 4.92
-     },
-     "clips": {
-      "backbone_rgi": "assets/clips/r3_s15_grid__clean__s34_bgbe4a_TBUS_+5.mp4"
-     },
-     "clean": "assets/grid__clean__s34_bgbe4a_TBUS_+5/clean.mp3"
-    },
-    {
+     "id": "s01",
      "text": "Reading in poor light gives you eyestrain.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -64,11 +18,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s03_tcd__occlusion__56M_sx248_OOFFICE_5.mp4"
+      "backbone_rgi": "assets/s01/rgi.mp4"
      },
-     "clean": "assets/tcd__occlusion__56M_sx248_OOFFICE_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s01/heard.mp3",
+      "enhanced_rgi": "assets/s01/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s02",
      "text": "Have you got our keys handy?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -80,11 +38,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s04_tcd__occlusion__47M_si1629_OOFFICE_5.mp4"
+      "backbone_rgi": "assets/s02/rgi.mp4"
      },
-     "clean": "assets/tcd__occlusion__47M_si1629_OOFFICE_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s02/heard.mp3",
+      "enhanced_rgi": "assets/s02/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s03",
      "text": "bin green by e four again",
      "visual_shift": "Occlusion",
      "corpus": "GRID",
@@ -96,11 +58,15 @@
       "noisy": 4.92
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s16_grid__occlusion__s34_bgbe4a_TBUS_+5.mp4"
+      "backbone_rgi": "assets/s03/rgi.mp4"
      },
-     "clean": "assets/grid__occlusion__s34_bgbe4a_TBUS_+5/clean.mp3"
+     "audio": {
+      "heard": "assets/s03/heard.mp3",
+      "enhanced_rgi": "assets/s03/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s04",
      "text": "Norwegian sweaters are made of lamb's wool.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -112,11 +78,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s05_tcd__blackout__47M_sx198_TBUS_5.mp4"
+      "backbone_rgi": "assets/s04/rgi.mp4"
      },
-     "clean": "assets/tcd__blackout__47M_sx198_TBUS_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s04/heard.mp3",
+      "enhanced_rgi": "assets/s04/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s05",
      "text": "Draw each graph on a new axis.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -128,11 +98,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s06_tcd__blackout__09F_sx197_OOFFICE_5.mp4"
+      "backbone_rgi": "assets/s05/rgi.mp4"
      },
-     "clean": "assets/tcd__blackout__09F_sx197_OOFFICE_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s05/heard.mp3",
+      "enhanced_rgi": "assets/s05/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s06",
      "text": "lay blue with q five again",
      "visual_shift": "Blackout",
      "corpus": "GRID",
@@ -144,11 +118,15 @@
       "noisy": 4.99
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s17_grid__blackout__s11_lbwq5a_OOFFICE_+5.mp4"
+      "backbone_rgi": "assets/s06/rgi.mp4"
      },
-     "clean": "assets/grid__blackout__s11_lbwq5a_OOFFICE_+5/clean.mp3"
+     "audio": {
+      "heard": "assets/s06/heard.mp3",
+      "enhanced_rgi": "assets/s06/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s07",
      "text": "Ralph controlled the stopwatch from the bleachers.",
      "visual_shift": "Wrong speaker",
      "corpus": "TCD-TIMIT",
@@ -160,11 +138,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s07_tcd__wrong_speaker__47M_sx200_TBUS_5.mp4"
+      "backbone_rgi": "assets/s07/rgi.mp4"
      },
-     "clean": "assets/tcd__wrong_speaker__47M_sx200_TBUS_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s07/heard.mp3",
+      "enhanced_rgi": "assets/s07/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s08",
      "text": "Do you hear the sleigh bells ringing?",
      "visual_shift": "Wrong speaker",
      "corpus": "TCD-TIMIT",
@@ -176,11 +158,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s08_tcd__wrong_speaker__40F_sx207_TBUS_5.mp4"
+      "backbone_rgi": "assets/s08/rgi.mp4"
      },
-     "clean": "assets/tcd__wrong_speaker__40F_sx207_TBUS_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s08/heard.mp3",
+      "enhanced_rgi": "assets/s08/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s09",
      "text": "place white in s seven now",
      "visual_shift": "Wrong speaker",
      "corpus": "GRID",
@@ -192,11 +178,15 @@
       "noisy": 5.05
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s18_grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5.mp4"
+      "backbone_rgi": "assets/s09/rgi.mp4"
      },
-     "clean": "assets/grid__wrong_speaker_anysent__s34_pwis7n_OOFFICE_+5/clean.mp3"
+     "audio": {
+      "heard": "assets/s09/heard.mp3",
+      "enhanced_rgi": "assets/s09/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s10",
      "text": "The small boy put the worm on the hook.",
      "visual_shift": "Freeze",
      "corpus": "TCD-TIMIT",
@@ -208,11 +198,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s09_tcd__freeze__26M_sx216_OOFFICE_5.mp4"
+      "backbone_rgi": "assets/s10/rgi.mp4"
      },
-     "clean": "assets/tcd__freeze__26M_sx216_OOFFICE_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s10/heard.mp3",
+      "enhanced_rgi": "assets/s10/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s11",
      "text": "Have you got our keys handy?",
      "visual_shift": "Freeze",
      "corpus": "TCD-TIMIT",
@@ -224,11 +218,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s10_tcd__freeze__47M_si1629_TBUS_5.mp4"
+      "backbone_rgi": "assets/s11/rgi.mp4"
      },
-     "clean": "assets/tcd__freeze__47M_si1629_TBUS_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s11/heard.mp3",
+      "enhanced_rgi": "assets/s11/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s12",
      "text": "lay white in d two again",
      "visual_shift": "Freeze",
      "corpus": "GRID",
@@ -240,11 +238,15 @@
       "noisy": 5.15
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s19_grid__freeze__s16_lwid2a_TBUS_+5.mp4"
+      "backbone_rgi": "assets/s12/rgi.mp4"
      },
-     "clean": "assets/grid__freeze__s16_lwid2a_TBUS_+5/clean.mp3"
+     "audio": {
+      "heard": "assets/s12/heard.mp3",
+      "enhanced_rgi": "assets/s12/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s13",
      "text": "Have you got our keys handy?",
      "visual_shift": "A/V offset",
      "corpus": "TCD-TIMIT",
@@ -256,11 +258,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s11_tcd__avoffset__47M_si1629_TBUS_5.mp4"
+      "backbone_rgi": "assets/s13/rgi.mp4"
      },
-     "clean": "assets/tcd__avoffset__47M_si1629_TBUS_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s13/heard.mp3",
+      "enhanced_rgi": "assets/s13/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s14",
      "text": "The small boy put the worm on the hook.",
      "visual_shift": "A/V offset",
      "corpus": "TCD-TIMIT",
@@ -272,11 +278,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s12_tcd__avoffset__26M_sx216_OOFFICE_5.mp4"
+      "backbone_rgi": "assets/s14/rgi.mp4"
      },
-     "clean": "assets/tcd__avoffset__26M_sx216_OOFFICE_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s14/heard.mp3",
+      "enhanced_rgi": "assets/s14/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s15",
      "text": "bin green by e four again",
      "visual_shift": "A/V offset",
      "corpus": "GRID",
@@ -288,11 +298,15 @@
       "noisy": 4.92
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s20_grid__avoffset__s34_bgbe4a_TBUS_+5.mp4"
+      "backbone_rgi": "assets/s15/rgi.mp4"
      },
-     "clean": "assets/grid__avoffset__s34_bgbe4a_TBUS_+5/clean.mp3"
+     "audio": {
+      "heard": "assets/s15/heard.mp3",
+      "enhanced_rgi": "assets/s15/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s16",
      "text": "Norwegian sweaters are made of lamb's wool.",
      "visual_shift": "Low resolution",
      "corpus": "TCD-TIMIT",
@@ -304,11 +318,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s13_tcd__lowres__47M_sx198_TBUS_5.mp4"
+      "backbone_rgi": "assets/s16/rgi.mp4"
      },
-     "clean": "assets/tcd__lowres__47M_sx198_TBUS_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s16/heard.mp3",
+      "enhanced_rgi": "assets/s16/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s17",
      "text": "The small boy put the worm on the hook.",
      "visual_shift": "Low resolution",
      "corpus": "TCD-TIMIT",
@@ -320,11 +338,15 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s14_tcd__lowres__26M_sx216_OOFFICE_5.mp4"
+      "backbone_rgi": "assets/s17/rgi.mp4"
      },
-     "clean": "assets/tcd__lowres__26M_sx216_OOFFICE_5/clean.mp3"
+     "audio": {
+      "heard": "assets/s17/heard.mp3",
+      "enhanced_rgi": "assets/s17/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s18",
      "text": "lay blue with q five again",
      "visual_shift": "Low resolution",
      "corpus": "GRID",
@@ -336,17 +358,81 @@
       "noisy": 4.99
      },
      "clips": {
-      "backbone_rgi": "assets/clips/r3_s21_grid__lowres__s11_lbwq5a_OOFFICE_+5.mp4"
+      "backbone_rgi": "assets/s18/rgi.mp4"
      },
-     "clean": "assets/grid__lowres__s11_lbwq5a_OOFFICE_+5/clean.mp3"
+     "audio": {
+      "heard": "assets/s18/heard.mp3",
+      "enhanced_rgi": "assets/s18/enhanced_rgi.mp3"
+     }
+    },
+    {
+     "id": "s19",
+     "text": "Draw each graph on a new axis.",
+     "visual_shift": "Clean",
+     "corpus": "TCD-TIMIT",
+     "noise": "Office",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 17.98,
+      "RGI": 18.31,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/s19/rgi.mp4"
+     },
+     "audio": {
+      "heard": "assets/s19/heard.mp3",
+      "enhanced_rgi": "assets/s19/enhanced_rgi.mp3"
+     }
+    },
+    {
+     "id": "s20",
+     "text": "Have you got our keys handy?",
+     "visual_shift": "Clean",
+     "corpus": "TCD-TIMIT",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 16.59,
+      "RGI": 17.2,
+      "noisy": 5.0
+     },
+     "clips": {
+      "backbone_rgi": "assets/s20/rgi.mp4"
+     },
+     "audio": {
+      "heard": "assets/s20/heard.mp3",
+      "enhanced_rgi": "assets/s20/enhanced_rgi.mp3"
+     }
+    },
+    {
+     "id": "s21",
+     "text": "bin green by e four again",
+     "visual_shift": "Clean",
+     "corpus": "GRID",
+     "noise": "Bus",
+     "snr_db": 5,
+     "si_sdr_db": {
+      "AV": 13.33,
+      "RGI": 13.63,
+      "noisy": 4.92
+     },
+     "clips": {
+      "backbone_rgi": "assets/s21/rgi.mp4"
+     },
+     "audio": {
+      "heard": "assets/s21/heard.mp3",
+      "enhanced_rgi": "assets/s21/enhanced_rgi.mp3"
+     }
     }
    ]
   },
   {
-   "id": "cmp-occlusion",
-   "name": "Comparison · Occlusion",
+   "id": "occlusion",
+   "name": "Occlusion",
    "items": [
     {
+     "id": "s22",
      "text": "I just saw Jim near the new archeological museum.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -358,12 +444,17 @@
       "noisy": -5.19
      },
      "clips": {
-      "backbone": "assets/clips/r1_s06_tcd__24M_sx378_TMETRO_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s06_tcd__24M_sx378_TMETRO_-5__occlusion.mp4"
+      "backbone": "assets/s22/av.mp4",
+      "backbone_rgi": "assets/s22/rgi.mp4"
      },
-     "clean": "assets/tcd__24M_sx378_TMETRO_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s22/heard.mp3",
+      "enhanced_av": "assets/s22/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s22/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s23",
      "text": "Do they allow atheists in church?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -375,12 +466,17 @@
       "noisy": 4.98
      },
      "clips": {
-      "backbone": "assets/clips/r1_s09_tcd__27M_sx254_TMETRO_5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s09_tcd__27M_sx254_TMETRO_5__occlusion.mp4"
+      "backbone": "assets/s23/av.mp4",
+      "backbone_rgi": "assets/s23/rgi.mp4"
      },
-     "clean": "assets/tcd__27M_sx254_TMETRO_5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s23/heard.mp3",
+      "enhanced_av": "assets/s23/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s23/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s24",
      "text": "He stole a dime from a beggar.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -392,12 +488,17 @@
       "noisy": -5.0
      },
      "clips": {
-      "backbone": "assets/clips/r1_s10_tcd__09F_sx104_OOFFICE_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s10_tcd__09F_sx104_OOFFICE_-5__occlusion.mp4"
+      "backbone": "assets/s24/av.mp4",
+      "backbone_rgi": "assets/s24/rgi.mp4"
      },
-     "clean": "assets/tcd__09F_sx104_OOFFICE_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s24/heard.mp3",
+      "enhanced_av": "assets/s24/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s24/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s25",
      "text": "Are your grades higher or lower than Nancy's?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -409,12 +510,17 @@
       "noisy": 4.95
      },
      "clips": {
-      "backbone": "assets/clips/r1_s11_tcd__24M_sx10_SPSQUARE_5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s11_tcd__24M_sx10_SPSQUARE_5__occlusion.mp4"
+      "backbone": "assets/s25/av.mp4",
+      "backbone_rgi": "assets/s25/rgi.mp4"
      },
-     "clean": "assets/tcd__24M_sx10_SPSQUARE_5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s25/heard.mp3",
+      "enhanced_av": "assets/s25/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s25/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s26",
      "text": "From it, spokes of order and degree led to the outward rim of the common man.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -426,12 +532,17 @@
       "noisy": 5.01
      },
      "clips": {
-      "backbone": "assets/clips/r1_s14_tcd__27M_si1227_TMETRO_5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s14_tcd__27M_si1227_TMETRO_5__occlusion.mp4"
+      "backbone": "assets/s26/av.mp4",
+      "backbone_rgi": "assets/s26/rgi.mp4"
      },
-     "clean": "assets/tcd__27M_si1227_TMETRO_5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s26/heard.mp3",
+      "enhanced_av": "assets/s26/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s26/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s27",
      "text": "The overweight charmer could slip poison into anyone's tea.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -443,12 +554,17 @@
       "noisy": -5.01
      },
      "clips": {
-      "backbone": "assets/clips/r1_s16_tcd__56M_sx433_OOFFICE_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s16_tcd__56M_sx433_OOFFICE_-5__occlusion.mp4"
+      "backbone": "assets/s27/av.mp4",
+      "backbone_rgi": "assets/s27/rgi.mp4"
      },
-     "clean": "assets/tcd__56M_sx433_OOFFICE_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s27/heard.mp3",
+      "enhanced_av": "assets/s27/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s27/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s28",
      "text": "Should giraffes be kept in small zoos?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -460,12 +576,17 @@
       "noisy": -4.96
      },
      "clips": {
-      "backbone": "assets/clips/r1_s18_tcd__40F_sx294_TMETRO_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s18_tcd__40F_sx294_TMETRO_-5__occlusion.mp4"
+      "backbone": "assets/s28/av.mp4",
+      "backbone_rgi": "assets/s28/rgi.mp4"
      },
-     "clean": "assets/tcd__40F_sx294_TMETRO_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s28/heard.mp3",
+      "enhanced_av": "assets/s28/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s28/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s29",
      "text": "Should giraffes be kept in small zoos?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -477,12 +598,17 @@
       "noisy": 4.99
      },
      "clips": {
-      "backbone": "assets/clips/r1_s19_tcd__40F_sx294_TMETRO_5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s19_tcd__40F_sx294_TMETRO_5__occlusion.mp4"
+      "backbone": "assets/s29/av.mp4",
+      "backbone_rgi": "assets/s29/rgi.mp4"
      },
-     "clean": "assets/tcd__40F_sx294_TMETRO_5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s29/heard.mp3",
+      "enhanced_av": "assets/s29/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s29/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s30",
      "text": "Try to recall the events in chronological order.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -494,12 +620,17 @@
       "noisy": -5.03
      },
      "clips": {
-      "backbone": "assets/clips/r1_s20_tcd__33F_sx218_TMETRO_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s20_tcd__33F_sx218_TMETRO_-5__occlusion.mp4"
+      "backbone": "assets/s30/av.mp4",
+      "backbone_rgi": "assets/s30/rgi.mp4"
      },
-     "clean": "assets/tcd__33F_sx218_TMETRO_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s30/heard.mp3",
+      "enhanced_av": "assets/s30/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s30/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s31",
      "text": "Why else would Danny allow others to go?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -511,12 +642,17 @@
       "noisy": 4.98
      },
      "clips": {
-      "backbone": "assets/clips/r1_s21_tcd__24M_sx183_STRAFFIC_5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s21_tcd__24M_sx183_STRAFFIC_5__occlusion.mp4"
+      "backbone": "assets/s31/av.mp4",
+      "backbone_rgi": "assets/s31/rgi.mp4"
      },
-     "clean": "assets/tcd__24M_sx183_STRAFFIC_5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s31/heard.mp3",
+      "enhanced_av": "assets/s31/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s31/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s32",
      "text": "I just saw Jim near the new archeological museum.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -528,12 +664,17 @@
       "noisy": -5.04
      },
      "clips": {
-      "backbone": "assets/clips/r1_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s22_tcd__24M_sx378_SPSQUARE_-5__occlusion.mp4"
+      "backbone": "assets/s32/av.mp4",
+      "backbone_rgi": "assets/s32/rgi.mp4"
      },
-     "clean": "assets/tcd__24M_sx378_SPSQUARE_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s32/heard.mp3",
+      "enhanced_av": "assets/s32/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s32/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s33",
      "text": "Why else would Danny allow others to go?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -545,12 +686,17 @@
       "noisy": -5.06
      },
      "clips": {
-      "backbone": "assets/clips/r1_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s23_tcd__24M_sx183_SPSQUARE_-5__occlusion.mp4"
+      "backbone": "assets/s33/av.mp4",
+      "backbone_rgi": "assets/s33/rgi.mp4"
      },
-     "clean": "assets/tcd__24M_sx183_SPSQUARE_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s33/heard.mp3",
+      "enhanced_av": "assets/s33/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s33/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s34",
      "text": "The small boy put the worm on the hook.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -562,12 +708,17 @@
       "noisy": -4.95
      },
      "clips": {
-      "backbone": "assets/clips/r1_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s26_tcd__26M_sx216_STRAFFIC_-5__occlusion.mp4"
+      "backbone": "assets/s34/av.mp4",
+      "backbone_rgi": "assets/s34/rgi.mp4"
      },
-     "clean": "assets/tcd__26M_sx216_STRAFFIC_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s34/heard.mp3",
+      "enhanced_av": "assets/s34/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s34/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s35",
      "text": "Would you allow acts of violence?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -579,12 +730,17 @@
       "noisy": -5.0
      },
      "clips": {
-      "backbone": "assets/clips/r1_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s27_tcd__09F_sx195_SPSQUARE_-5__occlusion.mp4"
+      "backbone": "assets/s35/av.mp4",
+      "backbone_rgi": "assets/s35/rgi.mp4"
      },
-     "clean": "assets/tcd__09F_sx195_SPSQUARE_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s35/heard.mp3",
+      "enhanced_av": "assets/s35/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s35/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s36",
      "text": "I know I didn't meet her early enough.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
@@ -596,18 +752,23 @@
       "noisy": -4.98
      },
      "clips": {
-      "backbone": "assets/clips/r1_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion.mp4",
-      "backbone_rgi": "assets/clips/r2_s28_tcd__56M_sx344_SPSQUARE_-5__occlusion.mp4"
+      "backbone": "assets/s36/av.mp4",
+      "backbone_rgi": "assets/s36/rgi.mp4"
      },
-     "clean": "assets/tcd__56M_sx344_SPSQUARE_-5__occlusion/clean.mp3"
+     "audio": {
+      "heard": "assets/s36/heard.mp3",
+      "enhanced_av": "assets/s36/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s36/enhanced_rgi.mp3"
+     }
     }
    ]
   },
   {
-   "id": "cmp-blackout",
-   "name": "Comparison · Blackout",
+   "id": "blackout",
+   "name": "Blackout",
    "items": [
     {
+     "id": "s37",
      "text": "Should giraffes be kept in small zoos?",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -619,12 +780,17 @@
       "noisy": -4.96
      },
      "clips": {
-      "backbone": "assets/clips/r1_s01_tcd__40F_sx294_TMETRO_-5__blackout.mp4",
-      "backbone_rgi": "assets/clips/r2_s01_tcd__40F_sx294_TMETRO_-5__blackout.mp4"
+      "backbone": "assets/s37/av.mp4",
+      "backbone_rgi": "assets/s37/rgi.mp4"
      },
-     "clean": "assets/tcd__40F_sx294_TMETRO_-5__blackout/clean.mp3"
+     "audio": {
+      "heard": "assets/s37/heard.mp3",
+      "enhanced_av": "assets/s37/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s37/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s38",
      "text": "Should giraffes be kept in small zoos?",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -636,12 +802,17 @@
       "noisy": 4.99
      },
      "clips": {
-      "backbone": "assets/clips/r1_s02_tcd__40F_sx294_TMETRO_5__blackout.mp4",
-      "backbone_rgi": "assets/clips/r2_s02_tcd__40F_sx294_TMETRO_5__blackout.mp4"
+      "backbone": "assets/s38/av.mp4",
+      "backbone_rgi": "assets/s38/rgi.mp4"
      },
-     "clean": "assets/tcd__40F_sx294_TMETRO_5__blackout/clean.mp3"
+     "audio": {
+      "heard": "assets/s38/heard.mp3",
+      "enhanced_av": "assets/s38/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s38/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s39",
      "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -653,12 +824,17 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone": "assets/clips/r1_s04_tcd__09F_si2056_STRAFFIC_5__blackout.mp4",
-      "backbone_rgi": "assets/clips/r2_s04_tcd__09F_si2056_STRAFFIC_5__blackout.mp4"
+      "backbone": "assets/s39/av.mp4",
+      "backbone_rgi": "assets/s39/rgi.mp4"
      },
-     "clean": "assets/tcd__09F_si2056_STRAFFIC_5__blackout/clean.mp3"
+     "audio": {
+      "heard": "assets/s39/heard.mp3",
+      "enhanced_av": "assets/s39/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s39/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s40",
      "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -670,12 +846,17 @@
       "noisy": 5.0
      },
      "clips": {
-      "backbone": "assets/clips/r1_s08_tcd__09F_si2056_TMETRO_5__blackout.mp4",
-      "backbone_rgi": "assets/clips/r2_s08_tcd__09F_si2056_TMETRO_5__blackout.mp4"
+      "backbone": "assets/s40/av.mp4",
+      "backbone_rgi": "assets/s40/rgi.mp4"
      },
-     "clean": "assets/tcd__09F_si2056_TMETRO_5__blackout/clean.mp3"
+     "audio": {
+      "heard": "assets/s40/heard.mp3",
+      "enhanced_av": "assets/s40/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s40/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s41",
      "text": "Our campus, unfortunately, owns no films.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -687,12 +868,17 @@
       "noisy": 4.97
      },
      "clips": {
-      "backbone": "assets/clips/r1_s12_tcd__47M_si1366_SPSQUARE_5__blackout.mp4",
-      "backbone_rgi": "assets/clips/r2_s12_tcd__47M_si1366_SPSQUARE_5__blackout.mp4"
+      "backbone": "assets/s41/av.mp4",
+      "backbone_rgi": "assets/s41/rgi.mp4"
      },
-     "clean": "assets/tcd__47M_si1366_SPSQUARE_5__blackout/clean.mp3"
+     "audio": {
+      "heard": "assets/s41/heard.mp3",
+      "enhanced_av": "assets/s41/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s41/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s42",
      "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -704,12 +890,17 @@
       "noisy": -4.99
      },
      "clips": {
-      "backbone": "assets/clips/r1_s13_tcd__09F_si2056_SPSQUARE_-5__blackout.mp4",
-      "backbone_rgi": "assets/clips/r2_s13_tcd__09F_si2056_SPSQUARE_-5__blackout.mp4"
+      "backbone": "assets/s42/av.mp4",
+      "backbone_rgi": "assets/s42/rgi.mp4"
      },
-     "clean": "assets/tcd__09F_si2056_SPSQUARE_-5__blackout/clean.mp3"
+     "audio": {
+      "heard": "assets/s42/heard.mp3",
+      "enhanced_av": "assets/s42/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s42/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s43",
      "text": "The easygoing zoologist relaxed throughout the voyage.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -721,12 +912,17 @@
       "noisy": -4.99
      },
      "clips": {
-      "backbone": "assets/clips/r1_s15_tcd__56M_sx165_OOFFICE_-5__blackout.mp4",
-      "backbone_rgi": "assets/clips/r2_s15_tcd__56M_sx165_OOFFICE_-5__blackout.mp4"
+      "backbone": "assets/s43/av.mp4",
+      "backbone_rgi": "assets/s43/rgi.mp4"
      },
-     "clean": "assets/tcd__56M_sx165_OOFFICE_-5__blackout/clean.mp3"
+     "audio": {
+      "heard": "assets/s43/heard.mp3",
+      "enhanced_av": "assets/s43/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s43/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s44",
      "text": "At twilight on the twelfth day we'll have Chablis.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
@@ -738,18 +934,23 @@
       "noisy": -4.97
      },
      "clips": {
-      "backbone": "assets/clips/r1_s17_tcd__49F_sx49_TMETRO_-5__blackout.mp4",
-      "backbone_rgi": "assets/clips/r2_s17_tcd__49F_sx49_TMETRO_-5__blackout.mp4"
+      "backbone": "assets/s44/av.mp4",
+      "backbone_rgi": "assets/s44/rgi.mp4"
      },
-     "clean": "assets/tcd__49F_sx49_TMETRO_-5__blackout/clean.mp3"
+     "audio": {
+      "heard": "assets/s44/heard.mp3",
+      "enhanced_av": "assets/s44/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s44/enhanced_rgi.mp3"
+     }
     }
    ]
   },
   {
-   "id": "cmp-wrong-speaker",
-   "name": "Comparison · Wrong speaker",
+   "id": "wrong-speaker",
+   "name": "Wrong speaker",
    "items": [
     {
+     "id": "s45",
      "text": "At twilight on the twelfth day we'll have Chablis.",
      "visual_shift": "Wrong speaker",
      "corpus": "TCD-TIMIT",
@@ -761,12 +962,17 @@
       "noisy": 4.99
      },
      "clips": {
-      "backbone": "assets/clips/r1_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker.mp4",
-      "backbone_rgi": "assets/clips/r2_s03_tcd__49F_sx49_SPSQUARE_5__wrong_speaker.mp4"
+      "backbone": "assets/s45/av.mp4",
+      "backbone_rgi": "assets/s45/rgi.mp4"
      },
-     "clean": "assets/tcd__49F_sx49_SPSQUARE_5__wrong_speaker/clean.mp3"
+     "audio": {
+      "heard": "assets/s45/heard.mp3",
+      "enhanced_av": "assets/s45/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s45/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s46",
      "text": "At twilight on the twelfth day we'll have Chablis.",
      "visual_shift": "Wrong speaker",
      "corpus": "TCD-TIMIT",
@@ -778,12 +984,17 @@
       "noisy": -4.97
      },
      "clips": {
-      "backbone": "assets/clips/r1_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker.mp4",
-      "backbone_rgi": "assets/clips/r2_s05_tcd__49F_sx49_TMETRO_-5__wrong_speaker.mp4"
+      "backbone": "assets/s46/av.mp4",
+      "backbone_rgi": "assets/s46/rgi.mp4"
      },
-     "clean": "assets/tcd__49F_sx49_TMETRO_-5__wrong_speaker/clean.mp3"
+     "audio": {
+      "heard": "assets/s46/heard.mp3",
+      "enhanced_av": "assets/s46/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s46/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s47",
      "text": "The emblem depicts the Acropolis all aglow.",
      "visual_shift": "Wrong speaker",
      "corpus": "TCD-TIMIT",
@@ -795,12 +1006,17 @@
       "noisy": 5.01
      },
      "clips": {
-      "backbone": "assets/clips/r1_s07_tcd__47M_sx115_TBUS_5__wrong_speaker.mp4",
-      "backbone_rgi": "assets/clips/r2_s07_tcd__47M_sx115_TBUS_5__wrong_speaker.mp4"
+      "backbone": "assets/s47/av.mp4",
+      "backbone_rgi": "assets/s47/rgi.mp4"
      },
-     "clean": "assets/tcd__47M_sx115_TBUS_5__wrong_speaker/clean.mp3"
+     "audio": {
+      "heard": "assets/s47/heard.mp3",
+      "enhanced_av": "assets/s47/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s47/enhanced_rgi.mp3"
+     }
     },
     {
+     "id": "s48",
      "text": "Try to recall the events in chronological order.",
      "visual_shift": "Wrong speaker",
      "corpus": "TCD-TIMIT",
@@ -812,13 +1028,16 @@
       "noisy": -5.03
      },
      "clips": {
-      "backbone": "assets/clips/r1_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker.mp4",
-      "backbone_rgi": "assets/clips/r2_s24_tcd__33F_sx218_TMETRO_-5__wrong_speaker.mp4"
+      "backbone": "assets/s48/av.mp4",
+      "backbone_rgi": "assets/s48/rgi.mp4"
      },
-     "clean": "assets/tcd__33F_sx218_TMETRO_-5__wrong_speaker/clean.mp3"
+     "audio": {
+      "heard": "assets/s48/heard.mp3",
+      "enhanced_av": "assets/s48/enhanced_av.mp3",
+      "enhanced_rgi": "assets/s48/enhanced_rgi.mp3"
+     }
     }
    ]
   }
- ],
- "note": "si_sdr_db.noisy is computed from the noisy input and the clean reference; AV and RGI are the stored per-clip values."
+ ]
 }
