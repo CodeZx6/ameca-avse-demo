@@ -1,0 +1,8 @@
+# Generator: kept local only (contains local filesystem paths)
+build_site.py
+# build / editor caches
+__pycache__/
+*.py[cod]
+.DS_Store
+*.tmp
+*.part
