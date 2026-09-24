@@ -7,14 +7,14 @@
    "items": [
     {
      "id": "s01",
-     "text": "Reading in poor light gives you eyestrain.",
+     "text": "Have you got our keys handy?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
      "noise": "Office",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 12.37,
-      "RGI": 16.2,
+      "AV": 14.69,
+      "RGI": 16.96,
       "noisy": 5.0
      },
      "clips": {
@@ -27,14 +27,14 @@
     },
     {
      "id": "s02",
-     "text": "Have you got our keys handy?",
+     "text": "Reading in poor light gives you eyestrain.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
      "noise": "Office",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 14.69,
-      "RGI": 16.96,
+      "AV": 12.37,
+      "RGI": 16.2,
       "noisy": 5.0
      },
      "clips": {
@@ -67,14 +67,14 @@
     },
     {
      "id": "s04",
-     "text": "Norwegian sweaters are made of lamb's wool.",
+     "text": "Draw each graph on a new axis.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
-     "noise": "Bus",
+     "noise": "Office",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 15.47,
-      "RGI": 15.98,
+      "AV": 15.27,
+      "RGI": 17.73,
       "noisy": 5.0
      },
      "clips": {
@@ -87,14 +87,14 @@
     },
     {
      "id": "s05",
-     "text": "Draw each graph on a new axis.",
+     "text": "Norwegian sweaters are made of lamb's wool.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
-     "noise": "Office",
+     "noise": "Bus",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 15.27,
-      "RGI": 17.73,
+      "AV": 15.47,
+      "RGI": 15.98,
       "noisy": 5.0
      },
      "clips": {
@@ -187,14 +187,14 @@
     },
     {
      "id": "s10",
-     "text": "The small boy put the worm on the hook.",
+     "text": "Have you got our keys handy?",
      "visual_shift": "Freeze",
      "corpus": "TCD-TIMIT",
-     "noise": "Office",
+     "noise": "Bus",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 17.54,
-      "RGI": 17.68,
+      "AV": 16.67,
+      "RGI": 17.25,
       "noisy": 5.0
      },
      "clips": {
@@ -207,14 +207,14 @@
     },
     {
      "id": "s11",
-     "text": "Have you got our keys handy?",
+     "text": "The small boy put the worm on the hook.",
      "visual_shift": "Freeze",
      "corpus": "TCD-TIMIT",
-     "noise": "Bus",
+     "noise": "Office",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 16.67,
-      "RGI": 17.25,
+      "AV": 17.54,
+      "RGI": 17.68,
       "noisy": 5.0
      },
      "clips": {
@@ -455,15 +455,15 @@
     },
     {
      "id": "s23",
-     "text": "Do they allow atheists in church?",
+     "text": "He stole a dime from a beggar.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
-     "noise": "Metro",
-     "snr_db": 5,
+     "noise": "Office",
+     "snr_db": -5,
      "si_sdr_db": {
-      "AV": 9.42,
-      "RGI": 13.91,
-      "noisy": 4.98
+      "AV": 12.81,
+      "RGI": 16.61,
+      "noisy": -5.0
      },
      "clips": {
       "backbone": "assets/s23/av.mp4",
@@ -477,15 +477,15 @@
     },
     {
      "id": "s24",
-     "text": "He stole a dime from a beggar.",
+     "text": "Do they allow atheists in church?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
-     "noise": "Office",
-     "snr_db": -5,
+     "noise": "Metro",
+     "snr_db": 5,
      "si_sdr_db": {
-      "AV": 12.81,
-      "RGI": 16.61,
-      "noisy": -5.0
+      "AV": 9.42,
+      "RGI": 13.91,
+      "noisy": 4.98
      },
      "clips": {
       "backbone": "assets/s24/av.mp4",
@@ -521,15 +521,15 @@
     },
     {
      "id": "s26",
-     "text": "From it, spokes of order and degree led to the outward rim of the common man.",
+     "text": "Should giraffes be kept in small zoos?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
      "noise": "Metro",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 6.79,
-      "RGI": 9.9,
-      "noisy": 5.01
+      "AV": 11.05,
+      "RGI": 13.47,
+      "noisy": 4.99
      },
      "clips": {
       "backbone": "assets/s26/av.mp4",
@@ -543,15 +543,15 @@
     },
     {
      "id": "s27",
-     "text": "The overweight charmer could slip poison into anyone's tea.",
+     "text": "From it, spokes of order and degree led to the outward rim of the common man.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
-     "noise": "Office",
-     "snr_db": -5,
+     "noise": "Metro",
+     "snr_db": 5,
      "si_sdr_db": {
-      "AV": 10.98,
-      "RGI": 13.75,
-      "noisy": -5.01
+      "AV": 6.79,
+      "RGI": 9.9,
+      "noisy": 5.01
      },
      "clips": {
       "backbone": "assets/s27/av.mp4",
@@ -587,15 +587,15 @@
     },
     {
      "id": "s29",
-     "text": "Should giraffes be kept in small zoos?",
+     "text": "The overweight charmer could slip poison into anyone's tea.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
-     "noise": "Metro",
-     "snr_db": 5,
+     "noise": "Office",
+     "snr_db": -5,
      "si_sdr_db": {
-      "AV": 11.05,
-      "RGI": 13.47,
-      "noisy": 4.99
+      "AV": 10.98,
+      "RGI": 13.75,
+      "noisy": -5.01
      },
      "clips": {
       "backbone": "assets/s29/av.mp4",
@@ -609,15 +609,15 @@
     },
     {
      "id": "s30",
-     "text": "Try to recall the events in chronological order.",
+     "text": "Why else would Danny allow others to go?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
-     "noise": "Metro",
-     "snr_db": -5,
+     "noise": "Street traffic",
+     "snr_db": 5,
      "si_sdr_db": {
-      "AV": 6.35,
-      "RGI": 8.71,
-      "noisy": -5.03
+      "AV": 7.11,
+      "RGI": 9.29,
+      "noisy": 4.98
      },
      "clips": {
       "backbone": "assets/s30/av.mp4",
@@ -631,15 +631,15 @@
     },
     {
      "id": "s31",
-     "text": "Why else would Danny allow others to go?",
+     "text": "Try to recall the events in chronological order.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
-     "noise": "Street traffic",
-     "snr_db": 5,
+     "noise": "Metro",
+     "snr_db": -5,
      "si_sdr_db": {
-      "AV": 7.11,
-      "RGI": 9.29,
-      "noisy": 4.98
+      "AV": 6.35,
+      "RGI": 8.71,
+      "noisy": -5.03
      },
      "clips": {
       "backbone": "assets/s31/av.mp4",
@@ -653,15 +653,15 @@
     },
     {
      "id": "s32",
-     "text": "I just saw Jim near the new archeological museum.",
+     "text": "The small boy put the worm on the hook.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
-     "noise": "Public square",
+     "noise": "Street traffic",
      "snr_db": -5,
      "si_sdr_db": {
-      "AV": 2.6,
-      "RGI": 4.55,
-      "noisy": -5.04
+      "AV": 7.92,
+      "RGI": 6.48,
+      "noisy": -4.95
      },
      "clips": {
       "backbone": "assets/s32/av.mp4",
@@ -675,15 +675,15 @@
     },
     {
      "id": "s33",
-     "text": "Why else would Danny allow others to go?",
+     "text": "I just saw Jim near the new archeological museum.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
      "noise": "Public square",
      "snr_db": -5,
      "si_sdr_db": {
-      "AV": 4.83,
-      "RGI": 6.7,
-      "noisy": -5.06
+      "AV": 2.6,
+      "RGI": 4.55,
+      "noisy": -5.04
      },
      "clips": {
       "backbone": "assets/s33/av.mp4",
@@ -697,15 +697,15 @@
     },
     {
      "id": "s34",
-     "text": "The small boy put the worm on the hook.",
+     "text": "I know I didn't meet her early enough.",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
-     "noise": "Street traffic",
+     "noise": "Public square",
      "snr_db": -5,
      "si_sdr_db": {
-      "AV": 7.92,
-      "RGI": 6.48,
-      "noisy": -4.95
+      "AV": 5.85,
+      "RGI": 2.34,
+      "noisy": -4.98
      },
      "clips": {
       "backbone": "assets/s34/av.mp4",
@@ -719,15 +719,15 @@
     },
     {
      "id": "s35",
-     "text": "Would you allow acts of violence?",
+     "text": "Why else would Danny allow others to go?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
      "noise": "Public square",
      "snr_db": -5,
      "si_sdr_db": {
-      "AV": 4.35,
-      "RGI": 1.4,
-      "noisy": -5.0
+      "AV": 4.83,
+      "RGI": 6.7,
+      "noisy": -5.06
      },
      "clips": {
       "backbone": "assets/s35/av.mp4",
@@ -741,15 +741,15 @@
     },
     {
      "id": "s36",
-     "text": "I know I didn't meet her early enough.",
+     "text": "Would you allow acts of violence?",
      "visual_shift": "Occlusion",
      "corpus": "TCD-TIMIT",
      "noise": "Public square",
      "snr_db": -5,
      "si_sdr_db": {
-      "AV": 5.85,
-      "RGI": 2.34,
-      "noisy": -4.98
+      "AV": 4.35,
+      "RGI": 1.4,
+      "noisy": -5.0
      },
      "clips": {
       "backbone": "assets/s36/av.mp4",
@@ -769,15 +769,15 @@
    "items": [
     {
      "id": "s37",
-     "text": "Should giraffes be kept in small zoos?",
+     "text": "Our campus, unfortunately, owns no films.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
-     "noise": "Metro",
-     "snr_db": -5,
+     "noise": "Public square",
+     "snr_db": 5,
      "si_sdr_db": {
-      "AV": 4.29,
-      "RGI": 9.55,
-      "noisy": -4.96
+      "AV": 10.47,
+      "RGI": 13.83,
+      "noisy": 4.97
      },
      "clips": {
       "backbone": "assets/s37/av.mp4",
@@ -816,11 +816,11 @@
      "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
-     "noise": "Street traffic",
+     "noise": "Metro",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 7.3,
-      "RGI": 12.2,
+      "AV": 7.53,
+      "RGI": 12.15,
       "noisy": 5.0
      },
      "clips": {
@@ -838,11 +838,11 @@
      "text": "All that time rifle barrels were pointing unwaveringly at his head and body.",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
-     "noise": "Metro",
+     "noise": "Street traffic",
      "snr_db": 5,
      "si_sdr_db": {
-      "AV": 7.53,
-      "RGI": 12.15,
+      "AV": 7.3,
+      "RGI": 12.2,
       "noisy": 5.0
      },
      "clips": {
@@ -857,15 +857,15 @@
     },
     {
      "id": "s41",
-     "text": "Our campus, unfortunately, owns no films.",
+     "text": "Should giraffes be kept in small zoos?",
      "visual_shift": "Blackout",
      "corpus": "TCD-TIMIT",
-     "noise": "Public square",
-     "snr_db": 5,
+     "noise": "Metro",
+     "snr_db": -5,
      "si_sdr_db": {
-      "AV": 10.47,
-      "RGI": 13.83,
-      "noisy": 4.97
+      "AV": 4.29,
+      "RGI": 9.55,
+      "noisy": -4.96
      },
      "clips": {
       "backbone": "assets/s41/av.mp4",
