@@ -45,7 +45,7 @@ h1,h2,h3,.navhead{font-family:var(--h-font);letter-spacing:var(--h-track);text-t
 .hero-in{max-width:calc(900px + 2*var(--s4));margin:0 auto;padding:var(--s6) var(--s4) var(--s5);text-align:center}
 h1{margin:0 0 var(--s3);display:flex;flex-direction:column;align-items:center;gap:6px}
 .t1{font:var(--h-t1);letter-spacing:var(--h-track);color:var(--rgi);text-wrap:balance}
-.t2{font:var(--h-t2);letter-spacing:var(--h-track);color:var(--ink)}
+.t2{font:var(--h-t2);letter-spacing:var(--h-track);color:var(--ink);text-wrap:balance}
 .nw{white-space:nowrap}
 .authors{font-style:italic;font-weight:500;font-size:15px;margin:0;color:var(--ink2)}
 h2{font:var(--h-sec);letter-spacing:var(--h-track);color:var(--ink);margin:var(--s4) 0 var(--s3)}
@@ -123,7 +123,7 @@ footer.foot{margin-top:var(--s6);padding:var(--s4) 0;border-top:1px solid var(--
 <body>
 <header class="hero">
  <div class="hero-in">
-  <h1><span class="t1">How Much to Trust the <span class="nw">Eyes?</span></span><span class="t2"><span class="nw">Reliability-Guided</span> Inference for <span class="nw">Diffusion-Based</span> <span class="nw">Audio-Visual</span> Speech Enhancement</span></h1>
+  <h1><span class="t1">How Much to Trust the Eyes?</span><span class="t2"><span class="nw">Reliability-Guided</span> Inference for <span class="nw">Diffusion-Based</span> <span class="nw">Audio-Visual</span> Speech Enhancement</span></h1>
   <p class="authors">Anonymous authors.</p>
  </div>
 </header>
@@ -134,7 +134,7 @@ footer.foot{margin-top:var(--s6);padding:var(--s4) 0;border-top:1px solid var(--
 <section class="sec" id="abstract">
  <div class="w-main">
   <h2>Abstract</h2>
-  <p class="text">Diffusion-based audio-visual speech enhancement (AVSE) iteratively recovers speech from noisy audio conditioned on temporally aligned visual cues, yet real-world deployment may introduce distribution shifts, such as visual degradation and audio-visual mismatch, that misguide the reverse diffusion process. Our analysis indicates that visual quality alone does not determine whether visual conditioning remains useful or misguides enhancement, since its effect depends on both the pretrained model and the acoustic input. Motivated by these findings, we propose Reliability-Guided Inference (RGI), a framework that scores the reliability of visual conditioning from internal visual representations and model responses and regulates its contribution during reverse diffusion. Specifically, at each reverse step, RGI weights the difference between audio-visual and audio-only predictions according to the reliability estimate, without updating the pretrained models. To retain visual cues that can remain useful at low input signal-to-noise ratio, RGI imposes a lower bound on the conditioning coefficient, the conditioning floor. A diffusion-step schedule further modulates the retained visual contribution along the sampling trajectory. Experiments across four corpora and three frozen diffusion AVSE backbones show that RGI improves enhancement under a range of distribution shifts, with gains that depend on the backbone and corpus. Further evaluation using recordings collected with the Ameca humanoid robot demonstrates its effectiveness under real-world audio-visual conditions.</p>
+  <p class="text">Diffusion-based audio-visual speech enhancement (AVSE) iteratively recovers speech from noisy audio conditioned on temporally aligned visual cues. Its real-world deployment may confront distribution shifts, such as visual degradation and audio-visual mismatch, which misguide the reverse diffusion process. Our analysis discloses that visual quality alone does not necessarily determine whether visual conditioning remains useful or misguides enhancement since its effect is coupled with both the pretrained model and the acoustic input. Motivated by these observations, we propose Reliability-Guided Inference (RGI), which takes the departure of both internal visual representations and model responses from those of matched audio-video pairs as evidence of distribution shift inside the pretrained model and converts this evidence into a reliability score that regulates visual conditioning during reverse diffusion. Specifically, at each reverse step, RGI weights the difference between audio-visual and audio-only predictions according to the reliability score, without updating the pretrained models. To retain visual cues that can remain useful at low input signal-to-noise ratio, RGI imposes a lower bound on the conditioning coefficient, the conditioning floor. A diffusion-step schedule further modulates the retained visual contribution along the sampling trajectory. Experiments across four corpora and three frozen diffusion AVSE backbones show that RGI improves enhancement under a range of distribution shifts on the corpora with clean references, with gains that depend on the backbone and corpus. Recordings collected from the Ameca humanoid robot further show that RGI can be deployed for robot interaction.</p>
  </div>
 </section>
 
